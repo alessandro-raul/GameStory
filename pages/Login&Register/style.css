@@ -1,0 +1,87 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60%;
+    background-color: #016FFF;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    width: 530px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+section .container {
+    display: flex;
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container h1 {
+    font-size: 4.0em;
+    color: #016FFF;
+}
+
+section .container img {
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+section .container input {
+    width: 85%;
+    height: 45px;
+    border: 0;
+    border-bottom: 1px solid rgba(70, 70, 70, 0.4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+section .container button {
+    width: 140px;
+    height: 45px;
+    background-color: #016FFF;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin-top: 25px;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+section .container p {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 100%;
+        border: none;
+    }
+    .card .container {
+        width: 90%;
+    }
+    body {
+        background-color: white;
+    }
+}

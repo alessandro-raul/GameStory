@@ -5,19 +5,22 @@ html {
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 60%;
 }
 
 header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     margin: 0;
     position: fixed;
     justify-content: center;
     align-items: center;
     background-color: #016FFF;
+    z-index: 3;
+    border-bottom: 1px solid white;
 }
 
 header .container {
@@ -32,321 +35,312 @@ a {
     text-decoration: none;
 }
 
-header .container p {
+header .container h1 {
     margin: 0;
     color: white;
     font-size: 2.5em;
     cursor: pointer;
+    font-weight: normal;
 }
 
-header .container button {
-    width: 130px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background-color: white;
-    color: #016FFF;
-    font-size: 1.8em;
+header .container .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.buttonBottom {
+header .container p {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+header .container .user img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#items-wrapper {
     display: flex;
-    width: 100%;
-    height: 50px;
-    bottom: 0;
-    border-top: 1px solid white;
-    position: fixed;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#items {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    --webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: none;
+    width: 100%;
+    height: 70vh;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#items-wrapper h1 {
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-size: 5.0em;
+    margin-top: 0;
+}
+
+#items-wrapper p {
+    z-index: 2;
+    margin-top: 90px;
+    color: #fff;
+    position: absolute;
+    font-size: 2.0em;
+    font-weight: normal;
+}
+
+#items-wrapper button {
+    z-index: 2;
+    position: absolute;
+    margin-top: 92px;
+    width: 130px;
+    height: 45px;
+    border-radius: 50px;
     background-color: #016FFF;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+#items-wrapper .user_options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 190px;
+    height: 105px;
+    background-color: #016FFF;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+    padding-top: 15px;
+    margin-right: 3.5%;
     visibility: hidden;
 }
 
-.buttonBottom p {
-    color: white;
-    font-size: 2.4em;
-}
-
-.showcase {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('../../img/RetroGamesBlur.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.showcase .container {
-    display: flex;
-    width: 70%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-
-.showcase .container h1 {
-    font-size: 5.0em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.showcase .container p {
-    margin: 0px;
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.showcase .container button {
-    width: 135px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: #016FFF;
-    border: none;
-    outline: none;
-    color: white;
+#items-wrapper .user_options p {
+    margin: 10px 0px 10px 0px;
+    z-index: 2;
     font-size: 1.7em;
-    margin: 25px;
+    position: relative;
+}
+
+#items-wrapper .user_options .edit_profile,
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 1px solid white;
     cursor: pointer;
 }
 
-section {
+#items-wrapper .user_options .edit_profile:hover,
+.logout:hover {
+    background-color: #0d53ad;
+    transition: 0.2s;
+}
+
+#items-wrapper .user_options .edit_profile img,
+.logout img {
+    width: 15px;
+}
+
+.content {
     display: flex;
     width: 100%;
-    min-height: 50vh;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid #016FFF;
-}
-
-section .container {
-    display: flex;
-    width: 90%;
     height: 100%;
-    margin: 40px 0px 40px 0px;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-section .container h1 {
-    font-size: 3.2em;
-    margin-top: 0;
-    color: #016FFF;
-}
-
-section .container p {
-    width: 98%;
-    margin-bottom: 0;
-    font-size: 2.2em;
-}
-
-section .container img {
-    width: 250px;
-}
-
-#letsGo .container {
-    justify-content: center;
-    margin: 50px 0px 50px 0px;
-}
-
-#letsGo .container .buttons p {
-    width: auto;
-    text-align: center;
-}
-
-#letsGo .buttons {
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 15%;
 }
 
-#letsGo .buttons button {
-    width: 90%;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    color: white;
-    font-size: 1.2rem;
-    background-color: #016FFF;
-    cursor: pointer;
-}
-
-#letsGo .buttons p {
-    font-size: 2.0em;
-}
-
-
-/* FOOTER */
-
-footer {
+.content_container {
     display: flex;
+    width: 94%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .console_information {
+    display: flex;
+    display: none;
     width: 100%;
     min-height: 500px;
     justify-content: center;
+    border: 2px solid rgba(60, 60, 60, 0.3);
+    border-radius: 5px;
+    margin: -10px 0px 60px 0px;
+}
+
+.content .console_information .container {
+    display: flex;
+    width: 95%;
+    height: auto;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom: 0;
-    background-color: #016FFF;
+    margin: 60px 0px 60px 0px;
 }
 
-footer .container {
+.content .console_information .container div {
     display: flex;
     width: 90%;
-    height: 80%;
-    padding: 50px 0px 0px 0px;
-}
-
-footer .container .text {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    color: white;
-}
-
-footer .container .text h1 {
-    font-size: 3.0em;
-    margin-top: 0;
-}
-
-footer .container .text p {
-    margin: 0;
-    width: 90%;
-    font-size: 2.0em;
-}
-
-footer .container .form .inputsRow {
-    display: flex;
-    width: 101%;
     flex-direction: row;
-    justify-content: flex-end;
-}
-
-footer .container .form {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-footer .container .form input,
-textarea {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    margin: 0;
-    padding-left: 15px;
-    box-sizing: border-box;
-    margin: 0.5%;
-}
-
-textarea {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 250px;
-    max-height: 300px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    padding-top: 15px;
-}
-
-footer .container .form button {
-    width: 120px;
-    height: 45px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50px;
-    color: white;
-    transition: 0.2s;
-    outline: none;
-    font-size: 1.6em;
-    cursor: pointer;
-}
-
-footer .container .form button:hover {
-    background-color: white;
-    color: #016FFF;
-    transition: 0.2s;
-}
-
-footer .copyMessage {
-    width: 90%;
-    font-size: 1.6em;
-    color: white;
-    text-align: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-
-/* RESPONSIVE ALL */
-
-@media (max-width: 550px) {
-    header .container {
-        justify-content: center;
-    }
-    header .container button {
-        display: none;
-    }
-    .buttonBottom {
-        visibility: visible;
-    }
-    body {
-        font-size: 45%;
-    }
-    #letsGo .container {
-        flex-direction: column;
-    }
+.content .console_information .container div .labels {
+    margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
-    header {
-        height: 65px;
-        border-bottom: 1px solid white;
-    }
-    header .container p {
-        font-size: 3.0em;
-    }
-    section .container .imgConsoles {
-        display: none;
-    }
-    #letsGo .container {
-        flex-direction: column;
-    }
-    #letsGo .buttons {
-        margin-top: 20px;
-        margin-left: 0;
-    }
-    footer .container {
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    footer .container .form {
-        width: 100%;
-        margin-top: 20px;
-        align-items: center;
-    }
-    footer .container .form button {
-        width: 100px;
-        height: 40px;
-    }
-    footer .container .text {
-        width: 90%;
-    }
+.content .console_information .container div img {
+    transition: 0.2s;
+    width: 170px;
+    height: 170px;
 }
 
-@media (max-width: 1000px) {
-    footer .container .form .inputsRow {
-        flex-wrap: wrap;
-    }
+.content .console_information .container div img:hover {
+    transition: 0.2s;
+    transform: scale(0.95);
+}
+
+.content .console_information .container div:nth-child(1) {
+    flex-direction: column;
+}
+
+.content .console_information .container div:nth-child(1) p {
+    font-size: 3.0em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.content .console_information .container div:nth-child(1) p:nth-child(2) {
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.content .console_information .container div:nth-child(2) p {
+    font-size: 1.9em;
+    text-align: justify;
+    width: 80%;
+}
+
+.content .console_information .container div:nth-child(3) {
+    justify-content: center;
+}
+
+.content .console_information .container div:nth-child(3) p,
+div:nth-child(5) p,
+div:nth-child(7) {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.content .console_information .container .classics {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content .console_information .container .classics .game {
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+}
+
+.content .console_information .container .classics .game p {
+    width: 100%;
+    min-height: 50px;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.content .console_information .container .recommend {
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content .console_information .container .recommend .game {
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+}
+
+.content .console_information .container .recommend .game p {
+    width: 100%;
+    min-height: 50px;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.content .console_information .container .videos {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content .console_information .container .videos .game {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+}
+
+.content .console_information .container .videos .game p {
+    width: 100%;
+    min-height: 50px;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.content .console_information .container .imgGame {
+    width: auto;
+    height: 170px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    transition: 0.2s;
+}
+
+.content .console_information .container .imgGame:hover {
+    transition: 0.2s;
+    transform: scale(0.95);
 }

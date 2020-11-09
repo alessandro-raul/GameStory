@@ -18,18 +18,19 @@ a {
 
 .card {
     display: flex;
-    width: 530px;
-    height: 750px;
+    width: 520px;
+    min-height: 750px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 5px 5px 5px rgba(70, 70, 70, 0.3);
 }
 
 section .container {
     display: flex;
-    width: 80%;
-    height: 90%;
+    width: 85%;
+    height: 95%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,18 +39,22 @@ section .container {
 section .container h1 {
     font-size: 4.0em;
     color: #016FFF;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    margin-top: 18PX;
 }
 
 section .container img {
-    width: 25%;
-    margin-bottom: 15px;
+    width: 35%;
 }
 
 section .container input {
     width: 85%;
     height: 45px;
-    border: 0;
-    border-bottom: 1px solid rgba(70, 70, 70, 0.4);
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgba(70, 70, 70, 0.4);
     margin-top: 10px;
     margin-bottom: 10px;
     outline: none;
@@ -77,6 +82,7 @@ section .container p {
     .card {
         width: 100%;
         border: none;
+        box-shadow: none;
     }
     .card .container {
         width: 90%;

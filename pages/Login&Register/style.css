@@ -18,8 +18,8 @@ a {
 
 .card {
     display: flex;
-    width: 520px;
-    min-height: 750px;
+    width: 450px;
+    height: 600px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;

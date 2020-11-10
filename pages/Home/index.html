@@ -69,7 +69,6 @@
                 </div>
             </div>
 
-            <div class="console_information" style="display: none;"></div>
 
             <div class="gen_label">
                 <p>Geração 16 Bits (1987 - 1996)</p>
@@ -80,7 +79,7 @@
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen2">
-                    <a onclick="showConsole(snes)">
+                    <a onclick="showConsole(snes)" href="#snes">
                         <div>
                             <img src="../../img/snes/marioPixel.png" alt="">
                             <img src="../../img/snes/SNES_logo.svg" alt="" srcset="">
@@ -92,13 +91,13 @@
                             <img src="../../img/genesis/sonicPixel.png" alt="">
                             <img src="../../img/genesis/segaGenseisLogo.png" alt="" srcset="">
                         </div>
-
                     </a>
-
-                    <div>
-                        <img src="../../img/neogeo/neogeoPixel.png" alt="">
-                        <img src="../../img/neogeo/neoGeoLogo.png" alt="" srcset="">
-                    </div>
+                    <a onclick="showConsole(neogeo)">
+                        <div>
+                            <img src="../../img/neogeo/neogeoPixel.png" alt="">
+                            <img src="../../img/neogeo/neoGeoLogo.png" alt="" srcset="">
+                        </div>
+                    </a>
                     <div>
                         <img src="../../img/turbograpfx/turboPersona.png" alt="">
                         <img src="../../img/turbograpfx/turboLogo.jpg" alt="" srcset="">
@@ -129,19 +128,19 @@
                     <div class="classics">
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/superMarioWorld.jpg" alt="">
-                            <p>Super Mario World</p>
+                            <p><span>Super Mario World</span><br> (1990)</p>
                         </div>
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/zelda.jpg" alt="">
-                            <p>The Legend Of Zelda</p>
+                            <p><span>The Legend Of Zelda</span><br> (1991)</p>
                         </div>
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/donkeyKong.jpg" alt="">
-                            <p>Donkey Kong Country</p>
+                            <p><span>Donkey Kong Country</span><br> (1994)</p>
                         </div>
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/topGear.jpg" alt="">
-                            <p>Top Gear</p>
+                            <p><span>Top Gear</span> (1992)</p>
                         </div>
                     </div>
                     <div>
@@ -150,16 +149,16 @@
                     <div class="recommend">
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/marioAllStars.jpg" alt="">
-                            <p>Super Mario All Stars</p>
+                            <p><span>Super Mario All Stars</span><br> (1993)</p>
                         </div>
 
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/megaMaxX.jpg" alt="">
-                            <p>Mega Man X</p>
+                            <p><span>Mega Man X</span><br> (1993)</p>
                         </div>
                         <div class="game">
                             <img class="imgGame" src="../../img/snes/classicGames/marioKart.jpg" alt="">
-                            <p>Super Mario Kart</p>
+                            <p><span>Super Mario Kart</span><br> (1992)</p>
                         </div>
                     </div>
                     <div>
@@ -167,23 +166,166 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <img class="imgGame" src="https://img.youtube.com/vi/ItfnQCg_Doc/maxresdefault.jpg" alt="">
-                            <p>Super Nintendo - História Completa (Super Bit World)</p>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/ItfnQCg_Doc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Super Nintendo - História Completa</span> <br>(Super Bit World)</p>
                         </div>
                         <div class="game">
-                            <img class="imgGame" src="https://img.youtube.com/vi/_B3QjEF5bkQ/maxresdefault.jpg" alt="">
-                            <p>7 Jogos indispensáveis (Velberan)</p>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/_B3QjEF5bkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
+
                         <div class="game">
-                            <img class="imgGame" src="https://img.youtube.com/vi/DJLx-ZMNCnk/maxresdefault.jpg" alt="">
-                            <p>Destravado: Super Nintendo no Brasil (The Enemy)</p>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/DJLx-ZMNCnk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Destravado: Super Nintendo no Brasil</span> <br>(The Enemy)</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="console_information" id="genesis">
+                <div class="container">
+                    <div>
+                        <p>Sega Genesis</p>
+                        <p>Lançado em 1988 - 16 Bits</p>
+                    </div>
+                    <div>
+                        <img src="../../img/genesis/genesisConsole.png" alt="">
+                        <p>O Sega Genesis, conhecido como Mega Drive fora da América do Norte, é um console de videogame doméstico de quarta geração de 16 bits desenvolvido e vendido pela Sega . O Genesis é o terceiro console da Sega e o sucessor do Master
+                            System . A Sega o lançou como Mega Drive no Japão em 1988, e mais tarde como Genesis na América do Norte em 1989. Em 1990, foi distribuído como Mega Drive pela Virgin Mastertronic na Europa, Ozisoft na Australásia e Tec Toy
+                            no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o Super Aladdin Boy.</p>
+                    </div>
+                    <div>
+                        <p class="labels">Clássicos do Genesis</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/sonic.jpg" alt="">
+                            <p><span>Sonic The Hedgehog</span> (1991)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/goldemAxe.jpg" alt="">
+                            <p><span>Goldem Axe</span> (1989)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/shinobi3.jpg" alt="">
+                            <p><span>Shinobi III</span> (1993)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/altered.jpg" alt="">
+                            <p><span>Altered Beast</span> (1988)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="labels">Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/streetFighter.jpg" alt="">
+                            <p><span>Street Fighter III</span> <br>(1997)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/flicky.jpg" alt="">
+                            <p><span>Flicky</span> <br>(1984)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/genesis/classicGames/alexKid.jpg" alt="">
+                            <p><span>Alex Kid in the Enchanted Castle</span> (1989)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="labels">Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/MYmeCNNBbNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Sega Mega Drive/Genesis - História Completa</span> (Super Bit World)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/n91QTl5nk_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
+                        </div>
+
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/H4kExofI83E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Destravado: Mega Drive no Brasil</span> <br>(The Enemy)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="console_information" id="neogeo">
+                <div class="container">
+                    <div>
+                        <p>Neo Geo</p>
+                        <p>Lançado em 1990 - 16 Bits</p>
+                    </div>
+                    <div>
+                        <img src="../../img/neogeo/neoGeoConsole.png" alt="">
+                        <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
+                            o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
+                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.</p>
+                    </div>
+                    <div>
+                        <p class="labels">Clássicos do Neo Geo</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/metalSlug2.jpg" alt="">
+                            <p><span>Metal Slug 2</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/tkof98.jpg" alt="">
+                            <p><span>The King Of Fighters 98</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/samurai.jpg" alt="">
+                            <p><span>Samurai Shodown II</span><br> (1994)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/fatalFury.jpg" alt="">
+                            <p><span>Fatal Fury Special</span><br> (1997)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="labels">Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/savageRain.jpg" alt="">
+                            <p><span>Savage Reign</span> <br>(1995)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/ninjaMasters.jpg" alt="">
+                            <p><span>Ninja Masters</span> <br>(1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/pulstars.jpg" alt="">
+                            <p><span>Pulstar</span><br> (1995)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="labels">Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/1ctRLqQnjag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Neo Geo - História Completa</span> <br>(Games Que Pariu)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/7sYobyJqoM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/oiFCaKZfb7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>SERÁ QUE DEU CERTO? SNK Neo Geo</span> (Super Bit World)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </section>
@@ -193,14 +335,16 @@
 
 <script>
     var visivel = false;
+    var consoleAnterior = "nadsa";
 
     function showConsole(console) {
-        visivel = !visivel;
-        if (visivel) {
-            console.style = 'display: block'
-        } else {
-            console.style = 'display: none'
-        }
+
+        consoleAnterior.style = 'display: none'
+        console.style = 'display:block'
+        consoleAnterior = console;
+
+
+
     }
 
     function next(gen) {

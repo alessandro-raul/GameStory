@@ -343,7 +343,7 @@ header .container .user img {
 }
 
 .content .console_information .container .imgGame {
-    width: auto;
+    width: 120px;
     height: 170px;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;

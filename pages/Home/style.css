@@ -208,7 +208,6 @@ header .container .user img {
 .gen_label p {
     font-size: 2.5em;
     margin-top: 0;
-    font-weight: 500;
     color: rgba(60, 60, 60, 0.8);
 }
 
@@ -346,12 +345,13 @@ header .container .user img {
     display: flex;
     width: 120px;
     flex-direction: column;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .content .console_information .container .game:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.22);
+    cursor: pointer;
 }
 
 .content .console_information .container .imgGame {

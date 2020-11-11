@@ -222,7 +222,7 @@ header .container .user img {
     min-height: 500px;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(60, 60, 60, 0.4);
+    border: 2px solid rgba(60, 60, 60, 0.2);
     border-radius: 5px;
     margin: -10px 0px 60px 0px;
     -webkit-animation: animate-div 1s;

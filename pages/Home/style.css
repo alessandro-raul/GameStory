@@ -6,6 +6,10 @@ span {
     font-weight: bold;
 }
 
+.span2 {
+    color: #016FFF;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -195,6 +199,22 @@ header .container .user img {
     flex-direction: column;
 }
 
+.gen_label {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.gen_label p {
+    font-size: 2.5em;
+    margin-top: 0;
+    font-weight: 500;
+    color: rgba(60, 60, 60, 0.8);
+}
+
+
+/* CSS DO CAROUSEL SEPARADO */
+
 .content .console_information {
     display: flex;
     display: none;
@@ -202,9 +222,32 @@ header .container .user img {
     min-height: 500px;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(60, 60, 60, 0.3);
+    border: 2px solid rgba(60, 60, 60, 0.4);
     border-radius: 5px;
     margin: -10px 0px 60px 0px;
+    -webkit-animation: animate-div 1s;
+}
+
+@-webkit-keyframes animate-div {
+    from {
+        opacity: 0;
+        margin-top: -70px;
+    }
+    to {
+        opacity: 1;
+        margin-top: -10px;
+    }
+}
+
+@-webkit-keyframes animate-div-out {
+    from {
+        opacity: 1;
+        margin-top: -10px;
+    }
+    to {
+        opacity: 0;
+        margin-top: -70px;
+    }
 }
 
 .content .console_information .container {
@@ -217,80 +260,109 @@ header .container .user img {
     margin: 60px 0px 60px 0px;
 }
 
-.content .console_information .container div {
+.content .console_information .container .console_title {
     display: flex;
     width: 90%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.content .console_information .container div .labels {
-    margin-bottom: 0;
-}
-
-.content .console_information .container div img {
-    transition: 0.2s;
-    width: 200px;
-    height: 200px;
-}
-
-.content .console_information .container div img:hover {
-    transition: 0.2s;
-    transform: scale(0.95);
-}
-
-.content .console_information .container div:nth-child(1) {
-    flex-direction: column;
+.content .console_information .container .console_title .line_row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
-.content .console_information .container div:nth-child(1) p {
+.content .console_information .container .console_title .line_row p {
     font-size: 3.0em;
     margin: 0;
     font-weight: bold;
 }
 
-.content .console_information .container div:nth-child(1) p:nth-child(2) {
-    font-size: 1.8em;
-    font-weight: normal;
+.content .console_information .container .console_title .line_row img {
+    width: 30px;
+    height: auto;
+    transition: 0.2s;
 }
 
-.content .console_information .container div:nth-child(2) {
+.content .console_information .container .console_title .line_row img:hover {
+    transition: 0.2s;
+    transform: scale(0.95);
+}
+
+.content .console_information .container .console_title p {
+    font-size: 2.0em;
+    margin: 0;
+}
+
+.content .console_information .container .console_presentation {
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.content .console_information .container div:nth-child(2) p {
+.content .console_information .container .console_presentation img {
+    transition: 0.2s;
+    width: 200px;
+    height: 200px;
+}
+
+.content .console_information .container .console_presentation img:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.content .console_information .container .console_presentation p {
     font-size: 1.9em;
     text-align: justify;
-    width: 80%;
+    width: 83%;
 }
 
-.content .console_information .container div:nth-child(3) {
-    justify-content: center;
-}
-
-.content .console_information .container .labels {
+.content .console_information .container .labels p {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .content .console_information .container .classics {
+    display: flex;
     width: 50%;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
 }
 
-.content .console_information .container .classics .game {
+.content .console_information .container .game {
     display: flex;
     width: 120px;
     flex-direction: column;
+    transition: 0.2s;
 }
 
-.content .console_information .container .classics .game p {
+.content .console_information .container .game:hover {
+    transition: 0.2s;
+    transform: scale(1.22);
+}
+
+.content .console_information .container .imgGame {
+    width: 120px;
+    height: 170px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    transition: 0.2s;
+}
+
+.content .console_information .container .game p {
     width: 100%;
     min-height: 60px;
     margin: 0;
@@ -300,31 +372,21 @@ header .container .user img {
 }
 
 .content .console_information .container .recommend {
-    width: 40%;
+    display: flex;
+    width: 37.5%;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.content .console_information .container .recommend .game {
-    display: flex;
-    width: 120px;
-    flex-direction: column;
-}
-
-.content .console_information .container .recommend .game p {
-    width: 100%;
-    min-height: 50px;
-    margin: 0;
-    font-size: 1.8em;
-    text-align: center;
-    font-weight: normal;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
 }
 
 .content .console_information .container .videos {
+    display: flex;
     width: 70%;
     max-width: 1300px;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .content .console_information .container .videos .game {
@@ -342,14 +404,6 @@ header .container .user img {
     font-weight: normal;
 }
 
-.content .console_information .container .imgGame {
-    width: 120px;
-    height: 170px;
-    border-radius: 5px;
-    margin: 10px 0px 10px 0px;
-    transition: 0.2s;
-}
-
 .content .console_information .container .imgVideo {
     width: auto;
     height: 190px;
@@ -362,10 +416,10 @@ header .container .user img {
 
 @media (max-width: 1600px) {
     .content .console_information .container div:nth-child(2) p {
-        width: 75%;
+        width: 78%;
     }
     .content .console_information .container .videos {
-        width: 80%;
+        width: 85%;
         max-width: 1300px;
         flex-direction: row;
         justify-content: space-evenly;

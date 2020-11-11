@@ -60,10 +60,19 @@
                 </div>
                 <div class="items" id="gen1">
                     <div>
-                        <img src="../../img/snes/marioPixel.png" alt="">
-                        <img src="../../img/snes/SNES_logo.png" alt="" srcset="">
+                        <img src="../../img/nes/marioBros.png" alt="">
+                        <img src="../../img/nes/NES_logo.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="../../img/masterSystem/alex.PNG" alt="">
+                        <img src="../../img/masterSystem/masterLogo.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="../../img/atari7800/pacMan.png" alt="">
+                        <img src="../../img/atari7800/atariLogo.png" alt="" srcset="">
                     </div>
                 </div>
+
                 <div class="button" style="display: none;" onclick="next(gen1)">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
                 </div>
@@ -79,7 +88,7 @@
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen2">
-                    <a onclick="showConsole(snes)" href="#snes">
+                    <a onclick="showConsole(snes)">
                         <div>
                             <img src="../../img/snes/marioPixel.png" alt="">
                             <img src="../../img/snes/SNES_logo.svg" alt="" srcset="">
@@ -105,7 +114,7 @@
                             <img src="../../img/turbograpfx/turboLogo.jpg" alt="" srcset="">
                         </div>
                     </a>
-                    
+
                 </div>
                 <div class="button" onclick="next(gen2)">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
@@ -114,11 +123,16 @@
 
             <div class="console_information" id="snes">
                 <div class="container">
-                    <div>
-                        <p>Super Nintendo</p>
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Super Nintendo</p>
+                            <a onclick="hideConsole(snes)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
                         <p>Lançado em 1990 - 16 Bits</p>
                     </div>
-                    <div>
+                    <div class="console_presentation">
                         <img src="../../img/snes/snesConsole.png" alt="">
                         <p>O Super Nintendo Entertainment System é o segundo console de mesa da Nintendo, sucessor do Nintendo Entertainment System (NES). O console apresentou gráficos e recursos de som avançados em comparação com outros consoles na época.
                             Além disso, o desenvolvimento de uma variedade de chips de aprimoramento (que foram integrados em placas de circuito) ajudou a mantê-lo competitivo no mercado. Enquanto brutos gráficos tridimensionais raramente tinham sido
@@ -126,8 +140,8 @@
                             interesse mais difundido em gráficos de polígono na indústria, ajudando a inaugurar os gráficos 3D, como pode ser visto na quinta geração de consoles de videogame.
                         </p>
                     </div>
-                    <div>
-                        <p class="labels">Clássicos do SNES</p>
+                    <div class="labels">
+                        <p>Clássicos do SNES</p>
                     </div>
                     <div class="classics">
                         <div class="game">
@@ -147,8 +161,8 @@
                             <p><span>Top Gear</span> (1992)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Recomendações</p>
+                    <div class="labels">
+                        <p>Recomendações</p>
                     </div>
                     <div class="recommend">
                         <div class="game">
@@ -165,8 +179,8 @@
                             <p><span>Super Mario Kart</span><br> (1992)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Videos</p>
+                    <div class="labels">
+                        <p>Videos</p>
                     </div>
                     <div class="videos">
                         <div class="game">
@@ -177,7 +191,6 @@
                             <iframe class="imgVideo" src="https://www.youtube.com/embed/_B3QjEF5bkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
-
                         <div class="game">
                             <iframe class="imgVideo" src="https://www.youtube.com/embed/DJLx-ZMNCnk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Destravado: Super Nintendo no Brasil</span> <br>(The Enemy)</p>
@@ -188,18 +201,23 @@
 
             <div class="console_information" id="genesis">
                 <div class="container">
-                    <div>
-                        <p>Sega Genesis</p>
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Sega Genesis</p>
+                            <a onclick="hideConsole(genesis)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
                         <p>Lançado em 1988 - 16 Bits</p>
                     </div>
-                    <div>
+                    <div class="console_presentation">
                         <img src="../../img/genesis/genesisConsole.png" alt="">
                         <p>O Sega Genesis, conhecido como Mega Drive fora da América do Norte, é um console de videogame doméstico de quarta geração de 16 bits desenvolvido e vendido pela Sega . O Genesis é o terceiro console da Sega e o sucessor do Master
                             System . A Sega o lançou como Mega Drive no Japão em 1988, e mais tarde como Genesis na América do Norte em 1989. Em 1990, foi distribuído como Mega Drive pela Virgin Mastertronic na Europa, Ozisoft na Australásia e Tec Toy
                             no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o Super Aladdin Boy.</p>
                     </div>
-                    <div>
-                        <p class="labels">Clássicos do Genesis</p>
+                    <div class="labels">
+                        <p>Clássicos do Genesis</p>
                     </div>
                     <div class="classics">
                         <div class="game">
@@ -219,15 +237,14 @@
                             <p><span>Altered Beast</span> (1988)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Recomendações</p>
+                    <div class="labels">
+                        <p>Recomendações</p>
                     </div>
                     <div class="recommend">
                         <div class="game">
                             <img class="imgGame" src="../../img/genesis/classicGames/streetFighter.jpg" alt="">
                             <p><span>Street Fighter III</span> <br>(1997)</p>
                         </div>
-
                         <div class="game">
                             <img class="imgGame" src="../../img/genesis/classicGames/flicky.jpg" alt="">
                             <p><span>Flicky</span> <br>(1984)</p>
@@ -237,8 +254,8 @@
                             <p><span>Alex Kid in the Enchanted Castle</span> (1989)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Videos</p>
+                    <div class="labels">
+                        <p>Videos</p>
                     </div>
                     <div class="videos">
                         <div class="game">
@@ -260,18 +277,23 @@
 
             <div class="console_information" id="neogeo">
                 <div class="container">
-                    <div>
-                        <p>Neo Geo</p>
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Neo Geo</p>
+                            <a onclick="hideConsole(neogeo)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
                         <p>Lançado em 1990 - 16 Bits</p>
                     </div>
-                    <div>
+                    <div class="console_presentation">
                         <img src="../../img/neogeo/neoGeoConsole.png" alt="">
                         <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
                             o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
                             impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.</p>
                     </div>
-                    <div>
-                        <p class="labels">Clássicos do Neo Geo</p>
+                    <div class="labels">
+                        <p>Clássicos do Neo Geo</p>
                     </div>
                     <div class="classics">
                         <div class="game">
@@ -291,8 +313,8 @@
                             <p><span>Fatal Fury Special</span><br> (1997)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Recomendações</p>
+                    <div class="labels">
+                        <p>Recomendações</p>
                     </div>
                     <div class="recommend">
                         <div class="game">
@@ -309,8 +331,8 @@
                             <p><span>Pulstar</span><br> (1995)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Videos</p>
+                    <div class="labels">
+                        <p>Videos</p>
                     </div>
                     <div class="videos">
                         <div class="game">
@@ -329,20 +351,27 @@
                 </div>
             </div>
 
-
             <div class="console_information" id="turboGfx">
                 <div class="container">
-                    <div>
-                        <p>Turbo Grafx</p>
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Turbo Grafx</p>
+                            <a onclick="hideConsole(turboGfx)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
                         <p>Lançado em 1987 - 16 Bits</p>
                     </div>
-                    <div>
-                        <img src="../../img/snes/snesConsole.png" alt="">
-                        <p>O TurboGrafx-16 , conhecido como PC Engine no Japão e na França, é um console de videogame doméstico de quarta geração projetado pela Hudson Soft e vendido pela NEC Home Electronics. Foi o primeiro console comercializado na era de 16 bits, embora na realidade usasse uma CPU de 8 bits modificada. Foi lançado no Japão em 1987 e na América do Norte em 1989. O modelo japonês foi importado e distribuído na França em 1989, e o Reino Unido e a Espanha receberam uma versão baseada no modelo americano conhecido simplesmente como TurboGrafx. No Japão, o sistema foi lançado como um concorrente do Famicom, mas o atraso do lançamento nos Estados Unidos significou que ele acabou competindo com o Sega Genesis e mais tarde com o Super Nintendo Entertainment System .
+                    <div class="console_presentation">
+                        <img src="../../img/turbograpfx/turboConsole.jpg" alt="">
+                        <p>O TurboGrafx-16 , conhecido como PC Engine no Japão e na França, é um console de videogame doméstico de quarta geração projetado pela Hudson Soft e vendido pela NEC Home Electronics. Foi o primeiro console comercializado na era
+                            de 16 bits, embora na realidade usasse uma CPU de 8 bits modificada. Foi lançado no Japão em 1987 e na América do Norte em 1989. O modelo japonês foi importado e distribuído na França em 1989, e o Reino Unido e a Espanha receberam
+                            uma versão baseada no modelo americano conhecido simplesmente como TurboGrafx. No Japão, o sistema foi lançado como um concorrente do Famicom, mas o atraso do lançamento nos Estados Unidos significou que ele acabou competindo
+                            com o Sega Genesis e mais tarde com o Super Nintendo Entertainment System .
                         </p>
                     </div>
-                    <div>
-                        <p class="labels">Clássicos do Turbo Grafx</p>
+                    <div class="labels">
+                        <p>Clássicos do Turbo Grafx</p>
                     </div>
                     <div class="classics">
                         <div class="game">
@@ -362,8 +391,8 @@
                             <p><span>R - Type</span><br> (1987)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Recomendações</p>
+                    <div class="labels">
+                        <p>Recomendações</p>
                     </div>
                     <div class="recommend">
                         <div class="game">
@@ -380,8 +409,8 @@
                             <p><span>Neutopia</span><br> (1989)</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="labels">Videos</p>
+                    <div class="labels">
+                        <p>Videos</p>
                     </div>
                     <div class="videos">
                         <div class="game">
@@ -400,9 +429,37 @@
                     </div>
                 </div>
             </div>
-
-
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
     </section>
 </body>
@@ -414,13 +471,15 @@
     var consoleAnterior = "nadsa";
 
     function showConsole(console) {
-
+        window.scrollBy(0, 0)
         consoleAnterior.style = 'display: none'
         console.style = 'display:block'
         consoleAnterior = console;
 
+    }
 
-
+    function hideConsole(console) {
+        console.style = 'display:none'
     }
 
     function next(gen) {

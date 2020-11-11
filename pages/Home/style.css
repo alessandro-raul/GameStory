@@ -350,7 +350,7 @@ header .container .user img {
 
 .content .console_information .container .game:hover {
     transition: 0.4s;
-    transform: scale(1.22);
+    transform: scale(1.1);
     cursor: pointer;
 }
 

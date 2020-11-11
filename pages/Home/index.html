@@ -55,14 +55,16 @@
                 <p>Geração 8 Bits (1987 - 1996)</p>
             </div>
             <div class="carousel">
-                <div class="button" style="display: none;" onclick="before(gen1)">
+                <div class="button" onclick="before(gen1)">
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen1">
+                    <a onclick="showConsole(nes)">
                     <div>
                         <img src="../../img/nes/marioBros.png" alt="">
                         <img src="../../img/nes/NES_logo.svg" alt="" srcset="">
                     </div>
+                    </a>
                     <div>
                         <img src="../../img/masterSystem/alex.PNG" alt="">
                         <img src="../../img/masterSystem/masterLogo.png" alt="" srcset="">
@@ -73,11 +75,86 @@
                     </div>
                 </div>
 
-                <div class="button" style="display: none;" onclick="next(gen1)">
+                <div class="button" onclick="next(gen1)">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
                 </div>
             </div>
 
+            <div class="console_information" id="nes">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Nintendo Entertainment System</p>
+                            <a onclick="hideConsole(nes)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1990 - 16 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/neogeo/neoGeoConsole.png" alt="">
+                        <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
+                            o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
+                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.</p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do NES</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/metalSlug2.jpg" alt="">
+                            <p><span>Metal Slug 2</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/tkof98.jpg" alt="">
+                            <p><span>The King Of Fighters 98</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/samurai.jpg" alt="">
+                            <p><span>Samurai Shodown II</span><br> (1994)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/fatalFury.jpg" alt="">
+                            <p><span>Fatal Fury Special</span><br> (1997)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/savageRain.jpg" alt="">
+                            <p><span>Savage Reign</span> <br>(1995)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/ninjaMasters.jpg" alt="">
+                            <p><span>Ninja Masters</span> <br>(1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/neogeo/classicsGames/pulstars.jpg" alt="">
+                            <p><span>Pulstar</span><br> (1995)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/1ctRLqQnjag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Neo Geo - História Completa</span> <br>(Games Que Pariu)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/7sYobyJqoM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/oiFCaKZfb7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>SERÁ QUE DEU CERTO? SNK Neo Geo</span> (Super Bit World)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="gen_label">
                 <p>Geração 16 Bits (1987 - 1996)</p>
@@ -114,7 +191,6 @@
                             <img src="../../img/turbograpfx/turboLogo.jpg" alt="" srcset="">
                         </div>
                     </a>
-
                 </div>
                 <div class="button" onclick="next(gen2)">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
@@ -429,34 +505,6 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
     </section>
 </body>
@@ -498,26 +546,27 @@
     let count = 0
     setInterval(function() {
         count += 300
-        if (count > 8400) count = 0
+        if (count > 4200) count = 0
+        console.log(count);
         document.querySelector("#items").scrollTo(count, 0)
 
-        if (count <= 900) {
+        if (count <= 300) {
             title.innerHTML = 'Super Nintendo';
             description.innerHTML = 'O console de 16 bits que mudou a história...';
             botao.setAttribute("onclick", "funcao1();");
-        } else if (count == 1200) {
+        } else if (count == 600) {
             title.innerHTML = 'Sega Genesis';
             description.innerHTML = 'Conheça o mais veloz da era 16 bits'
             botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 3000) {
+        } else if (count == 1800) {
             title.innerHTML = 'Playstation 2';
             description.innerHTML = 'O queridinho dos brasileiros'
             botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 4800) {
+        } else if (count == 2700) {
             title.innerHTML = 'Nintendo 64';
             description.innerHTML = 'A popularização da Nintendo no universo 3D'
             botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 6600) {
+        } else if (count == 4200) {
             title.innerHTML = 'Nintendo Wii';
             description.innerHTML = 'Uma revolução na forma de se jogar'
             botao.setAttribute("onclick", "funcao2();");

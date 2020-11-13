@@ -7,6 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssSlider/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <title>GameStory: Home</title>
 </head>
@@ -55,9 +59,6 @@
                 <p>Geração 8 Bits (1987 - 1996)</p>
             </div>
             <div class="carousel">
-                <div class="button" onclick="before(gen1)">
-                    <img src="../../img/assets/angle-left-solid.png" alt="">
-                </div>
                 <div class="items" id="gen1">
                     <a onclick="showConsole(nes)">
                     <div>
@@ -73,10 +74,6 @@
                         <img src="../../img/atari7800/pacMan.png" alt="">
                         <img src="../../img/atari7800/atariLogo.png" alt="" srcset="">
                     </div>
-                </div>
-
-                <div class="button" onclick="next(gen1)">
-                    <img src="../../img/assets/angle-right-solid.png" alt="">
                 </div>
             </div>
 
@@ -523,7 +520,10 @@
     }
 
     function hideConsole(console) {
-        console.style = 'display:none'
+        console.style.setProperty('-webkit-animation', 'animate-div-out 0.5s');
+       setTimeout(() => {
+           console.style = 'display: none';
+       }, 500);
     }
 
     function next(gen) {

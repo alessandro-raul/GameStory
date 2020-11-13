@@ -223,8 +223,8 @@ header .container .user img {
     align-items: center;
     border: 2px solid rgba(60, 60, 60, 0.2);
     border-radius: 5px;
-    margin: -10px 0px 60px 0px;
-    -webkit-animation: animate-div 1s;
+    margin: -25px 0px 60px 0px;
+    -webkit-animation: animate-div 0.5s;
 }
 
 @-webkit-keyframes animate-div {
@@ -234,7 +234,7 @@ header .container .user img {
     }
     to {
         opacity: 1;
-        margin-top: -10px;
+        margin-top: -25px;
     }
 }
 
@@ -415,7 +415,7 @@ header .container .user img {
 /* MEDIA QUERYS */
 
 @media (max-width: 1600px) {
-    .content .console_information .container div:nth-child(2) p {
+    .content .console_information .container .console_presentation p {
         width: 78%;
     }
     .content .console_information .container .videos {

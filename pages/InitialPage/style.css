@@ -35,7 +35,7 @@ a {
 header .container h1 {
     margin: 0;
     color: white;
-    font-size: 2.5em;
+    font-size: 2.6em;
     cursor: pointer;
     font-weight: normal;
 }
@@ -90,14 +90,14 @@ header .container button {
 }
 
 .showcase .container h1 {
-    font-size: 5.0em;
-    margin-bottom: 20px;
+    font-size: 6.0em;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .showcase .container p {
     margin: 0px;
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-align: center;
 }
 

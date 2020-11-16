@@ -10,12 +10,79 @@ span {
     color: #016FFF;
 }
 
+#intro{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../img/assets/bgIntro.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    overflow-x: hidden;
+}
+
+#intro h1{
+    margin: 0;
+    font-size: 100px;
+    color: white;
+}
+
+#intro p{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+}
+
+.slider{
+    width: 100%;
+    height: 300px;
+    background-image: url('../../img/assets/tenor.gif');
+    margin-bottom: 50px;
+}
+
+@-webkit-keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade_out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 60%;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:  #016FFF;
 }
 
 header {
@@ -46,10 +113,20 @@ a {
 header .container h1 {
     margin: 0;
     color: white;
-    font-size: 2.5em;
+    font-size: 2.6em;
     cursor: pointer;
     font-weight: normal;
+    animation: in_out 2s infinite;
 }
+
+@keyframes in_out{
+    from {
+        transform: scale(none);
+    }
+    to {
+        transform: scale(1);
+    }
+} 
 
 header .container .user {
     display: flex;
@@ -69,70 +146,6 @@ header .container .user img {
     width: 25px;
     height: 25px;
     margin-right: 10px;
-}
-
-#items-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-#items {
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    --webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-}
-
-.item {
-    flex: none;
-    width: 100%;
-    height: 80vh;
-    scroll-snap-align: start;
-    pointer-events: none;
-}
-
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
-}
-
-#items-wrapper h1 {
-    z-index: 2;
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    font-size: 5.0em;
-    margin-top: 0;
-}
-
-#items-wrapper p {
-    z-index: 2;
-    margin-top: 90px;
-    color: #fff;
-    position: absolute;
-    font-size: 2.0em;
-    font-weight: normal;
-}
-
-#items-wrapper button {
-    z-index: 2;
-    position: absolute;
-    margin-top: 92px;
-    width: 130px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: #016FFF;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 1.6em;
-    cursor: pointer;
 }
 
 #items-wrapper .user_options {
@@ -193,7 +206,7 @@ header .container .user img {
 
 .content_container {
     display: flex;
-    width: 94%;
+    width: 90%;
     height: 100%;
     align-items: center;
     flex-direction: column;
@@ -211,9 +224,7 @@ header .container .user img {
     color: rgba(60, 60, 60, 0.8);
 }
 
-
 /* CSS DO CAROUSEL SEPARADO */
-
 .content .console_information {
     display: flex;
     display: none;

@@ -1,7 +1,9 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 60%;
-    background-color: #016FFF;
+    background-image: url('../../img/assets/bgLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +23,7 @@ a {
 .card {
     display: flex;
     width: 450px;
-    height: 90%;
+    height: 620px;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -39,16 +41,14 @@ section .container {
 }
 
 #register .card{
-    height: 80%;
-    border-radius: 0;
+    height: 680px;
+    border-radius: 5px;
    
 }
 
 #register .card .container{
     height: 100%;
 }
-
-
 
 section .container h1 {
     font-size: 4.0em;
@@ -96,9 +96,20 @@ section .container p {
 @media (max-width: 550px) {
     .card {
         width: 100%;
+        height: 100%;
         border: none;
         box-shadow: none;
+        border-radius: 0;
     }
+
+    #register .card {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
     .card .container {
         width: 90%;
     }

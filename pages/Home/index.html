@@ -7,18 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssSlider/style.css" />
+    <link rel="stylesheet" href="cssCarousel/style.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+    <script src="script.js"></script>
+
     <title>GameStory: Home</title>
 </head>
+<section id="intro">
+    <h1 class="animate__animated animate__zoomInDown" id="title">GameStory</h1>
+    <p class="animate__animated animate__zoomInUp" id="subtitle">Sua viagem começa agora...</p>
+</section>
 <header>
     <div class="container">
-        <a href="#start">
-            <h1>GameStory</h1>
-        </a>
+            <a href="../InitialPage/index.html">
+                <h1 class="animate__animated animate__pulse">GameStory</h1>
+            </a>
         <a onclick="user_options()">
             <div class="user">
                 <img src="../../img/user-circle-regular (2).png" alt="">
@@ -27,32 +34,9 @@
         </a>
     </div>
 </header>
-
-<body>
-    <div id="items-wrapper">
-        <h1 id="title">Super Nintendo</h1>
-        <p id="description">O console de 16 bits que mudou a história...</p>
-        <button id="botao">Saiba mais</button>
-        <div id="items">
-            <div class="item"><img src="../../img/snes/superNes2.png" /></div>
-            <div class="item"><img src="../../img/genesis/segaGenesis2.png" /></div>
-            <div class="item"><img src="../../img/ps1/ps1.png" /></div>
-            <div class="item"><img src="../../img/n64/n64.png" /></div>
-            <div class="item"><img src="../../img/wii/wii.png" /></div>
-        </div>
-
-        <div class="user_options" id="hidden">
-            <div class="edit_profile">
-                <p>Editar Perfil</p>
-                <img src="../../img/assets/pen-solid.png" alt="">
-            </div>
-            <div class="logout">
-                <p>Logout</p>
-                <img src="../../img/assets/sign-out-alt-solid.png" alt="">
-            </div>
-        </div>
+<body id="body">
+    <div class="slider">
     </div>
-
     <section class="content">
         <div class="content_container">
             <div class="gen_label">
@@ -158,7 +142,7 @@
             </div>
 
             <div class="carousel">
-                <div class="button" onclick="before(gen2)">
+                <div class="button" style="display: none;" onclick="before(gen2)">
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen2">
@@ -189,7 +173,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="button" onclick="next(gen2)">
+                <div class="button" style="display: none;" onclick="next(gen2)">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
                 </div>
             </div>
@@ -287,7 +271,8 @@
                         <img src="../../img/genesis/genesisConsole.png" alt="">
                         <p>O Sega Genesis, conhecido como Mega Drive fora da América do Norte, é um console de videogame doméstico de quarta geração de 16 bits desenvolvido e vendido pela Sega . O Genesis é o terceiro console da Sega e o sucessor do Master
                             System . A Sega o lançou como Mega Drive no Japão em 1988, e mais tarde como Genesis na América do Norte em 1989. Em 1990, foi distribuído como Mega Drive pela Virgin Mastertronic na Europa, Ozisoft na Australásia e Tec Toy
-                            no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o Super Aladdin Boy.</p>
+                            no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o Super Aladdin Boy.
+                        </p>
                     </div>
                     <div class="labels">
                         <p>Clássicos do Genesis</p>
@@ -363,7 +348,8 @@
                         <img src="../../img/neogeo/neoGeoConsole.png" alt="">
                         <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
                             o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
-                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.</p>
+                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.
+                        </p>
                     </div>
                     <div class="labels">
                         <p>Clássicos do Neo Geo</p>
@@ -505,80 +491,4 @@
         </div>
     </section>
 </body>
-
 </html>
-
-<script>
-    var visivel = false;
-    var consoleAnterior = "nadsa";
-
-    function showConsole(console) {
-        window.scrollBy(10, 0)
-        consoleAnterior.style = 'display: none'
-        console.style = 'display:block'
-        consoleAnterior = console;
-    }
-
-    function hideConsole(console) {
-        console.style.setProperty('-webkit-animation', 'animate-div-out 0.5s');
-       setTimeout(() => {
-           console.style = 'display: none';
-       }, 500);
-    }
-
-    function next(gen) {
-        document.getElementById(gen.id).scrollBy(600, 0);
-    }
-
-    function before(gen) {
-        document.getElementById(gen.id).scrollBy(-600, 0);
-    }
-
-    function user_options() {
-        visivel = !visivel;
-        if (visivel) {
-            hidden.style = 'visibility: visible; transform: scaleY(100px);'
-        } else {
-            hidden.style = 'visibility: hidden;'
-        }
-    }
-
-    let count = 0
-    setInterval(function() {
-        count += 300
-        if (count > 4200) count = 0
-        console.log(count);
-        document.querySelector("#items").scrollTo(count, 0)
-
-        if (count <= 300) {
-            title.innerHTML = 'Super Nintendo';
-            description.innerHTML = 'O console de 16 bits que mudou a história...';
-            botao.setAttribute("onclick", "funcao1();");
-        } else if (count == 600) {
-            title.innerHTML = 'Sega Genesis';
-            description.innerHTML = 'Conheça o mais veloz da era 16 bits'
-            botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 1800) {
-            title.innerHTML = 'Playstation 2';
-            description.innerHTML = 'O queridinho dos brasileiros'
-            botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 2700) {
-            title.innerHTML = 'Nintendo 64';
-            description.innerHTML = 'A popularização da Nintendo no universo 3D'
-            botao.setAttribute("onclick", "funcao2();");
-        } else if (count == 4200) {
-            title.innerHTML = 'Nintendo Wii';
-            description.innerHTML = 'Uma revolução na forma de se jogar'
-            botao.setAttribute("onclick", "funcao2();");
-        }
-    }, 2200)
-
-
-    function funcao1() {
-        alert('Snes');
-    }
-
-    function funcao2() {
-        alert('Genesis');
-    }
-</script>

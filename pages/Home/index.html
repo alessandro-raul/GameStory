@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssSlider/style.css" />
     <link rel="stylesheet" href="cssCarousel/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="script.js"></script>
 
@@ -23,9 +22,9 @@
 </section>
 <header>
     <div class="container">
-            <a href="../InitialPage/index.html">
-                <h1 class="animate__animated animate__pulse">GameStory</h1>
-            </a>
+        <a href="../InitialPage/index.html">
+            <h1 class="animate__animated animate__pulse">GameStory</h1>
+        </a>
         <a onclick="user_options()">
             <div class="user">
                 <img src="../../img/user-circle-regular (2).png" alt="">
@@ -34,6 +33,7 @@
         </a>
     </div>
 </header>
+
 <body id="body">
     <div class="slider">
     </div>
@@ -45,19 +45,23 @@
             <div class="carousel">
                 <div class="items" id="gen1">
                     <a onclick="showConsole(nes)">
-                    <div>
-                        <img src="../../img/nes/marioBros.png" alt="">
-                        <img src="../../img/nes/NES_logo.svg" alt="" srcset="">
-                    </div>
+                        <div>
+                            <img src="../../img/nes/marioBros.png" alt="">
+                            <img src="../../img/nes/NES_logo.svg" alt="" srcset="">
+                        </div>
                     </a>
-                    <div>
-                        <img src="../../img/masterSystem/alex.PNG" alt="">
-                        <img src="../../img/masterSystem/masterLogo.png" alt="" srcset="">
-                    </div>
-                    <div>
-                        <img src="../../img/atari7800/pacMan.png" alt="">
-                        <img src="../../img/atari7800/atariLogo.png" alt="" srcset="">
-                    </div>
+                    <a onclick="showConsole(masterSystem)">
+                        <div>
+                            <img src="../../img/masterSystem/alex.PNG" alt="">
+                            <img src="../../img/masterSystem/masterLogo.png" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a onclick="showConsole(atari)">
+                        <div>
+                            <img src="../../img/atari7800/pacMan.png" alt="">
+                            <img src="../../img/atari7800/atariLogo.png" alt="" srcset="">
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -70,33 +74,38 @@
                                 <img src="../../img/assets/times-solid.png" alt="">
                             </a>
                         </div>
-                        <p>Lançado em 1990 - 16 Bits</p>
+                        <p>Lançado em 1985 - 8 Bits</p>
                     </div>
                     <div class="console_presentation">
-                        <img src="../../img/neogeo/neoGeoConsole.png" alt="">
-                        <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
-                            o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
-                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.</p>
+                        <img src="../../img/nes/nesConsole.jpg" alt="">
+                        <p>Nintendo Entertainment System (NES, popularmente chamado de Nintendinho) é um console lançado
+                            pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançado
+                            no Japão em 1983 com o nome de Nintendo Family Computer, Family Computer, ou apenas Famicom,
+                            o sistema foi redesenhado e recebeu o novo nome para ser lançado no mercado americano em
+                            1985. O NES/Famicom foi o videogame de maior sucesso comercial na sua época, ajudou a
+                            indústria de videogames a se recuperar da crise de 1983 e estabeleceu novos padrões que
+                            seriam seguidos pela indústria. Também foi o primeiro console a ser produzido por terceiros,
+                            o que ajudou a divulgar o sistema em todo o mundo.</p>
                     </div>
                     <div class="labels">
                         <p>Clássicos do NES</p>
                     </div>
                     <div class="classics">
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/metalSlug2.jpg" alt="">
-                            <p><span>Metal Slug 2</span><br> (1998)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/marioBros.png" alt="">
+                            <p><span>Super Mario Bros</span><br> (1985)</p>
                         </div>
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/tkof98.jpg" alt="">
-                            <p><span>The King Of Fighters 98</span><br> (1998)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/zelda.png" alt="">
+                            <p><span>The Legend Of Zelda</span><br> (1986)</p>
                         </div>
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/samurai.jpg" alt="">
-                            <p><span>Samurai Shodown II</span><br> (1994)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/metroid.jpg" alt="">
+                            <p><span>Metroid</span><br> (1986)</p>
                         </div>
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/fatalFury.jpg" alt="">
-                            <p><span>Fatal Fury Special</span><br> (1997)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/castlevania.jpg" alt="">
+                            <p><span>Castlevania</span><br> (1986)</p>
                         </div>
                     </div>
                     <div class="labels">
@@ -104,17 +113,17 @@
                     </div>
                     <div class="recommend">
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/savageRain.jpg" alt="">
-                            <p><span>Savage Reign</span> <br>(1995)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/duckTales.jpg" alt="">
+                            <p><span>Duck Tales</span> <br>(1989)</p>
                         </div>
 
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/ninjaMasters.jpg" alt="">
-                            <p><span>Ninja Masters</span> <br>(1996)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/ninjaGaiden.jpg" alt="">
+                            <p><span>Ninja Gaiden</span> <br>(1988)</p>
                         </div>
                         <div class="game">
-                            <img class="imgGame" src="../../img/neogeo/classicsGames/pulstars.jpg" alt="">
-                            <p><span>Pulstar</span><br> (1995)</p>
+                            <img class="imgGame" src="../../img/nes/classicGames/megaMAn2.jpg" alt="">
+                            <p><span>Mega Man 2</span><br> (1988)</p>
                         </div>
                     </div>
                     <div class="labels">
@@ -122,16 +131,201 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/1ctRLqQnjag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p><span>Neo Geo - História Completa</span> <br>(Games Que Pariu)</p>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/vEOAC0E4Xb4" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Nes - História Completa</span> <br>(Super Bit World)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/7sYobyJqoM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/Hdp38pgFb3g" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/oiFCaKZfb7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p><span>SERÁ QUE DEU CERTO? SNK Neo Geo</span> (Super Bit World)</p>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/k8uVrPD1Y9Y" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Curiosidades do NES</span> (Super Bit World)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="masterSystem">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Master System</p>
+                            <a onclick="hideConsole(masterSystem)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1989 - 8 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/masterSystem/masterSystemConsole.jpg" alt="">
+                        <p>
+                            Lançado inicialmente no Japão em 1986, com o nome Sega Mark III, ele enfrentou grandes
+                            dificuldades devido à forte concorrência do NES da Nintendo.
+                            A Nintendo possuía contratos de exclusividade junto às produtoras de jogos. O contrato não
+                            permitia que elas produzissem jogos para nenhum outro aparelho, fazendo com que o Master
+                            System dependesse principalmente dos lançamentos desenvolvidos pela Sega.
+                            O baixo sucesso no Japão não evitou que a Sega lançasse o Master System no resto do mundo.
+                            Nos Estados Unidos o domínio da Nintendo também era muito grande, e logo a Sega vendeu os
+                            direitos de comercialização do Master System naquele país para a Tonka, que não conseguiu
+                            fazer um trabalho eficiente de divulgação e distribuição do console, fazendo com que a
+                            popularidade do aparelho fosse muito baixa.
+                            O fracasso do Master System nos EUA e Japão levou a Sega a grandes estratégias para fazer
+                            seu Mega Drive bem-sucedido nesses mercados (e também no Brasil e Europa).
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do Master System</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/shinobi.jpg" alt="">
+                            <p><span>Shinobi</span><br> (1987)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/phantasyStar.jpg" alt="">
+                            <p><span>Phantasy Star</span><br> (1987)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/sonicTheHedgehog2.jpg" alt="">
+                            <p><span>Sonic the Hedgehog 2</span><br> (1992)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/alexKid.jpg" alt="">
+                            <p><span>Alex Kidd in Miracle World</span><br> (1986)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/aladdin.jpg" alt="">
+                            <p><span>Aladdin</span> <br>(1994)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/masterOfDarkness.jpg" alt="">
+                            <p><span>Master Of Darkness</span> <br>(1992)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/masterSystem/castleOfillusion.jpg" alt="">
+                            <p><span>Castle of Illusion</span><br> (1990)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/5B1hLwklSwI" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Master System - História Completa</span> <br>(Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/AnnWA1neyt8" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/xw4H_V_8QQE" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Os segredos do Master System no Brasil</span> <br>(The Enemy)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="atari">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Atari 7800</p>
+                            <a onclick="hideConsole(atari)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1986 - 8 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/atari7800/atariConsole.jpg" alt="">
+                        <p>
+                            Atari 7800 foi um console de videogame da terceira geração lançado pela empresa Atari em
+                            junho de 1986 (um teste de mercado ocorreu dois anos antes). Desenvolvido para substituir o
+                            Atari 5200, que teve um sucesso de mercado razoável, e concorrer com os consoles
+                            Intellivision e Colecovision.
+                            O Atari 7800, foi projetado para fazer frente aos recentes rivais do Atari 5200, O Nintendo
+                            Entertainment System (NES) e o Sega Master System. Com um processador trabalhando em uma
+                            velocidade maior do que os rivais, e com um processador de áudio com 2 canais separados, o
+                            Atari 7800 possuía um desempenho maior do que o NES, inclusive com uma PPU superior ao Sega
+                            Master System que não possuía uma PPU e processava tudo pelo Z80.
+                            Porém, o que decretou o fracasso do Atari 7800, mesmo sendo superior aos concorrentes, foi o
+                            baixissímo acervo de jogos, uma vez que a maior parte das Software Houses de sucesso da
+                            época, como: Taito, Namco, Capcom e a própria Activision, responsável pelos maiores sucessos
+                            da Atari a época do Atari 2600, já possuíam contrato de exclusividade com a mais promissora
+                            empresa da época, a Nintendo.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do Atari</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/galaga.jpg" alt="">
+                            <p><span>Galaga</span><br> (1981)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/msPacMan.jpg" alt="">
+                            <p><span>Ms. Pac Man</span><br> (1981)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/asteroids.jpg" alt="">
+                            <p><span>Asteroids</span><br> (1979)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/ikariWarriors.jpg" alt="">
+                            <p><span>Ikari Warriors</span><br> (1986)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/alienBrigade.jpg" alt="">
+                            <p><span>Alien Brigade</span> <br>(1990)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/MidnightMutants.jpg" alt="">
+                            <p><span>Midnight Mutants</span> <br>(1990)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/atari7800/classicGames/polePosition.jpg" alt="">
+                            <p><span>Pole Position II</span><br> (1983)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/EAYHmFH-ZKU" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Atari 7800 - História Completa</span> <br>(Games que pariu)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/zZaU3inmWeQ" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Os 7 melhores gráficos do Atari 7800</span> <br> (Games das Antigas)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/8rVcj-TgnXc" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Você Conhece Este Atari?</span> <br>(Cosmic Effect)</p>
                         </div>
                     </div>
                 </div>
@@ -191,10 +385,17 @@
                     </div>
                     <div class="console_presentation">
                         <img src="../../img/snes/snesConsole.png" alt="">
-                        <p>O Super Nintendo Entertainment System é o segundo console de mesa da Nintendo, sucessor do Nintendo Entertainment System (NES). O console apresentou gráficos e recursos de som avançados em comparação com outros consoles na época.
-                            Além disso, o desenvolvimento de uma variedade de chips de aprimoramento (que foram integrados em placas de circuito) ajudou a mantê-lo competitivo no mercado. Enquanto brutos gráficos tridimensionais raramente tinham sido
-                            vistos antes em consoles domésticos, utilizando o chip Super FX começando com Star Fox em 1993, o SNES foi capaz de rodar jogos com gráficos tridimensionais suaves e mais detalhados do que era anteriormente possível. Isso despertou
-                            interesse mais difundido em gráficos de polígono na indústria, ajudando a inaugurar os gráficos 3D, como pode ser visto na quinta geração de consoles de videogame.
+                        <p>O Super Nintendo Entertainment System é o segundo console de mesa da Nintendo, sucessor do
+                            Nintendo Entertainment System (NES). O console apresentou gráficos e recursos de som
+                            avançados em comparação com outros consoles na época.
+                            Além disso, o desenvolvimento de uma variedade de chips de aprimoramento (que foram
+                            integrados em placas de circuito) ajudou a mantê-lo competitivo no mercado. Enquanto brutos
+                            gráficos tridimensionais raramente tinham sido
+                            vistos antes em consoles domésticos, utilizando o chip Super FX começando com Star Fox em
+                            1993, o SNES foi capaz de rodar jogos com gráficos tridimensionais suaves e mais detalhados
+                            do que era anteriormente possível. Isso despertou
+                            interesse mais difundido em gráficos de polígono na indústria, ajudando a inaugurar os
+                            gráficos 3D, como pode ser visto na quinta geração de consoles de videogame.
                         </p>
                     </div>
                     <div class="labels">
@@ -241,15 +442,18 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/ItfnQCg_Doc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/ItfnQCg_Doc" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Super Nintendo - História Completa</span> <br>(Super Bit World)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/_B3QjEF5bkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/_B3QjEF5bkQ" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/DJLx-ZMNCnk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/DJLx-ZMNCnk" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Destravado: Super Nintendo no Brasil</span> <br>(The Enemy)</p>
                         </div>
                     </div>
@@ -269,9 +473,14 @@
                     </div>
                     <div class="console_presentation">
                         <img src="../../img/genesis/genesisConsole.png" alt="">
-                        <p>O Sega Genesis, conhecido como Mega Drive fora da América do Norte, é um console de videogame doméstico de quarta geração de 16 bits desenvolvido e vendido pela Sega . O Genesis é o terceiro console da Sega e o sucessor do Master
-                            System . A Sega o lançou como Mega Drive no Japão em 1988, e mais tarde como Genesis na América do Norte em 1989. Em 1990, foi distribuído como Mega Drive pela Virgin Mastertronic na Europa, Ozisoft na Australásia e Tec Toy
-                            no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o Super Aladdin Boy.
+                        <p>O Sega Genesis, conhecido como Mega Drive fora da América do Norte, é um console de videogame
+                            doméstico de quarta geração de 16 bits desenvolvido e vendido pela Sega . O Genesis é o
+                            terceiro console da Sega e o sucessor do Master
+                            System . A Sega o lançou como Mega Drive no Japão em 1988, e mais tarde como Genesis na
+                            América do Norte em 1989. Em 1990, foi distribuído como Mega Drive pela Virgin Mastertronic
+                            na Europa, Ozisoft na Australásia e Tec Toy
+                            no Brasil. Na Coreia do Sul, foi distribuído pela Samsung como Super GameBoy e mais tarde o
+                            Super Aladdin Boy.
                         </p>
                     </div>
                     <div class="labels">
@@ -317,16 +526,19 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/MYmeCNNBbNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/MYmeCNNBbNA" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Sega Mega Drive/Genesis - História Completa</span> (Super Bit World)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/n91QTl5nk_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/n91QTl5nk_4" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
 
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/H4kExofI83E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/H4kExofI83E" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Destravado: Mega Drive no Brasil</span> <br>(The Enemy)</p>
                         </div>
                     </div>
@@ -346,9 +558,15 @@
                     </div>
                     <div class="console_presentation">
                         <img src="../../img/neogeo/neoGeoConsole.png" alt="">
-                        <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a 2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua contraparte de console doméstico, o Neo Geo AES. Tanto
-                            o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado tanto para o console AES quanto para os seus jogos
-                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na América do Norte.
+                        <p>Neo Geo é uma família da hardware de videogames desenvolvido pela SNK. No mercado de 1990 a
+                            2004, a marca originou-se com a liberação de um sistema arcade, o Neo Geo MVS e sua
+                            contraparte de console doméstico, o Neo Geo AES. Tanto
+                            o sistema arcade quanto o console foram poderosos para o tempo e o AES permite a
+                            compatibilidade perfeita dos jogos lançados para o MVS. No entanto, o ponto de preço elevado
+                            tanto para o console AES quanto para os seus jogos
+                            impediu-o de competir diretamente com seus contemporâneos, Sega Genesis, Super NES e
+                            TurboGrafx-16. No entanto, o arcade MVS tornou-se muito bem sucedido em lojas no Japão e na
+                            América do Norte.
                         </p>
                     </div>
                     <div class="labels">
@@ -395,15 +613,18 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/1ctRLqQnjag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/1ctRLqQnjag" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Neo Geo - História Completa</span> <br>(Games Que Pariu)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/7sYobyJqoM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/7sYobyJqoM8" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/oiFCaKZfb7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/oiFCaKZfb7M" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>SERÁ QUE DEU CERTO? SNK Neo Geo</span> (Super Bit World)</p>
                         </div>
                     </div>
@@ -423,9 +644,15 @@
                     </div>
                     <div class="console_presentation">
                         <img src="../../img/turbograpfx/turboConsole.jpg" alt="">
-                        <p>O TurboGrafx-16 , conhecido como PC Engine no Japão e na França, é um console de videogame doméstico de quarta geração projetado pela Hudson Soft e vendido pela NEC Home Electronics. Foi o primeiro console comercializado na era
-                            de 16 bits, embora na realidade usasse uma CPU de 8 bits modificada. Foi lançado no Japão em 1987 e na América do Norte em 1989. O modelo japonês foi importado e distribuído na França em 1989, e o Reino Unido e a Espanha receberam
-                            uma versão baseada no modelo americano conhecido simplesmente como TurboGrafx. No Japão, o sistema foi lançado como um concorrente do Famicom, mas o atraso do lançamento nos Estados Unidos significou que ele acabou competindo
+                        <p>O TurboGrafx-16 , conhecido como PC Engine no Japão e na França, é um console de videogame
+                            doméstico de quarta geração projetado pela Hudson Soft e vendido pela NEC Home Electronics.
+                            Foi o primeiro console comercializado na era
+                            de 16 bits, embora na realidade usasse uma CPU de 8 bits modificada. Foi lançado no Japão em
+                            1987 e na América do Norte em 1989. O modelo japonês foi importado e distribuído na França
+                            em 1989, e o Reino Unido e a Espanha receberam
+                            uma versão baseada no modelo americano conhecido simplesmente como TurboGrafx. No Japão, o
+                            sistema foi lançado como um concorrente do Famicom, mas o atraso do lançamento nos Estados
+                            Unidos significou que ele acabou competindo
                             com o Sega Genesis e mais tarde com o Super Nintendo Entertainment System .
                         </p>
                     </div>
@@ -473,16 +700,19 @@
                     </div>
                     <div class="videos">
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/10AmtWfTT9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/10AmtWfTT9A" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>Turbo Grafx - História Completa</span> <br>(Super Bit World)</p>
                         </div>
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/OejdMCLLH2w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/OejdMCLLH2w" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span> <br> (Velberan)</p>
                         </div>
 
                         <div class="game">
-                            <iframe class="imgVideo" src="https://www.youtube.com/embed/VDp4RYJ6ZAw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/VDp4RYJ6ZAw" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Coisas sobre o TurboGrafx 16</span> <br>(Nostalgia dos games)</p>
                         </div>
                     </div>
@@ -491,4 +721,5 @@
         </div>
     </section>
 </body>
+
 </html>

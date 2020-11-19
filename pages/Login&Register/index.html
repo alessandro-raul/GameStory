@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>GameStory: Login</title>
 </head>
 
@@ -18,7 +19,6 @@
                 <a href="../InitialPage/index.html">
                     <h1>GameStory</h1>
                 </a>
-
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Senha">
                 <a href="../Home/index.html">
@@ -38,29 +38,21 @@
                 <a href="../InitialPage/index.html">
                     <h1>GameStory</h1>
                 </a>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Senha">
-                <input type="text" placeholder="Confirmar Senha">
-                <button>Cadastrar</button>
+                <input type="text" placeholder="Nome" id="nomeTxt" onkeyup="validaNome()">
+                <p class="msg" id="msg_nome">*Insira um nome válido.</p>
+                <input type="email" placeholder="Email" id="emailTxt" onkeyup="validaEmail()">
+                <p class="msg" id="msg_email">*Insira um email válido.</p>
+                <input type="password" placeholder="Senha" id="senhaTxt" onkeyup="validaSenha()">
+                <p class="msg" id="msg_senha">*Insira uma senha válida (mínimo 5 caracteres: 2 numéricos)</p>
+                <input type="password" placeholder="Confirmar Senha" id="confirmarSenhaTxt" onkeyup="validaSenha2()">
+                <p class="msg" id="msg_senha2">*As senhas devem ser idênticas.</p>
+                <button onclick="logar()" id="btn_cadastrar">Cadastrar</button>
                 <a onclick="changeToLogin()">
-                    <p>Já possui cadastro?</p>
+                    <p id="btn_possui">Já possui cadastro?</p>
                 </a>
+                <img id="loading" src="../../img/assets/loading3.gif" alt="">
             </div>
         </div>
     </section>
 </body>
 </html>
-
-<script>
-    function changeToLogin() {
-        register.style = "display: none";
-        login.style = "display: block, flex";
-    }
-
-    function changeToRegister() {
-        register.style = "display: block, flex";
-        login.style = "display: none";
-        
-    }
-</script>

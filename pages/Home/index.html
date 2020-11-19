@@ -11,24 +11,29 @@
     <link rel="stylesheet" href="cssSlider/style.css" />
     <link rel="stylesheet" href="cssCarousel/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <script src="script.js"></script>
-
     <title>GameStory: Home</title>
 </head>
-<section id="intro">
+<section class="intro" id="intro">
     <h1 class="animate__animated animate__zoomInDown" id="title">GameStory</h1>
     <p class="animate__animated animate__zoomInUp" id="subtitle">Sua viagem começa agora...</p>
+</section>
+<section class="intro" id="goodbye">
+    <h1 class="animate__animated animate__fadeInDown" id="see_you">Até a próxima...</h1>
+    <p class="animate__animated animate__fadeInUp" id="thanks">O Gamestory agradece ;)</p>
 </section>
 <header>
     <div class="container">
         <a href="../InitialPage/index.html">
-            <h1 class="animate__animated animate__pulse">GameStory</h1>
+            <div class="logo">
+                <h1 class="animate__animated animate__pulse">GameStory</h1>
+                <img style="width:35px" src="https://media.giphy.com/media/XzeRWmW7f5K4kZnrgB/giphy.gif" alt="" srcset="">
+            </div>
         </a>
-        <a onclick="user_options()">
+        <a onclick="logout()">
             <div class="user">
-                <img src="../../img/user-circle-regular (2).png" alt="">
-                <p>Olá, Usuário X</p>
+                <p>Logout</p>
+                <img src="../../img/assets/log-out.svg" alt="">
             </div>
         </a>
     </div>
@@ -36,11 +41,23 @@
 
 <body id="body">
     <div class="slider">
+        <h1 id="hello_user"></h1>
+       <p id="welcome_user">Seja bem vindo(a)!</p>
     </div>
     <section class="content">
         <div class="content_container">
             <div class="gen_label">
-                <p>Geração 8 Bits (1987 - 1996)</p>
+                <p>Geração 8 Bits (1983 - 1987)</p>
+            </div>
+            <div class="gen_description">
+                <p>
+                    Na história dos jogos eletrônicos, a terceira geração (também conhecida com a era dos 8-bits) teve
+                    início em 15 de julho de 1983, no Japão, com o lançamento simultâneo do Family Computer (chamado de NES) e do SG-1000 da SEGA. Esta geração marcou
+                    o fim do "crash" norte-americano dos video games, uma mudança no lar dominante dos video games (dos
+                    Estados Unidos para o Japão) e a transição dos gráficos baseados em blocos para uma rolagem
+                    contínua de hardware (smooth scrolling) de pontos quadriculados e gráficos baseados em sprites, que
+                    foi um salto crucial na história do design dos jogos eletrônicos.
+                </p>
             </div>
             <div class="carousel">
                 <div class="items" id="gen1">
@@ -143,7 +160,7 @@
                         <div class="game">
                             <iframe class="imgVideo" src="https://www.youtube.com/embed/k8uVrPD1Y9Y" frameborder="0"
                                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p><span>Curiosidades do NES</span> (Super Bit World)</p>
+                            <p><span>Curiosidades do NES</span> <br>(Super Bit World)</p>
                         </div>
                     </div>
                 </div>
@@ -333,6 +350,15 @@
 
             <div class="gen_label">
                 <p>Geração 16 Bits (1987 - 1996)</p>
+            </div>
+            <div class="gen_description">
+                <p>A quarta geração de consoles, conhecida como a era dos 16-bits está direcionada aos consoles
+                    lançados entre 1987 e 1996, onde se destacavam o Super Nintendo, Mega Drive e o Neo Geo .
+                    Neste período os consoles novamente receberam upgrades tanto em gráficos como nos controles, entre
+                    eles foram gráficos
+                    em 16 bits, Controles de jogo de 3 a 8 botões, Gráficos pré-renderizados, entre outros. Bora
+                    conhecer um pouco sobre cada console?
+                </p>
             </div>
 
             <div class="carousel">
@@ -720,6 +746,10 @@
             </div>
         </div>
     </section>
+    <footer>
+     
+        <p class="copyMessage">© Copyright GameStory. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

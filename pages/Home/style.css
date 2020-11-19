@@ -10,7 +10,7 @@ span {
     color: #016FFF;
 }
 
-#intro{
+.intro{
     display: flex;
     width: 100%;
     height: 100vh;
@@ -24,23 +24,30 @@ span {
     overflow-x: hidden;
 }
 
-#intro h1{
+.intro h1{
     margin: 0;
     font-size: 100px;
     color: white;
 }
 
-#intro p{
+.intro p{
     margin: 0;
     font-size: 35px;
     color: white;
 }
 
-.slider{
-    width: 100%;
-    height: 300px;
-    background-image: url('../../img/assets/tenor.gif');
-    margin-bottom: 50px;
+#goodbye{
+   display: none;
+   background-image: none;
+   -webkit-animation: fade_in 0.5s; 
+}
+
+#goodbye h1{
+    color: black;
+}
+
+#goodbye p{
+    color: black;
 }
 
 @-webkit-keyframes fade_in {
@@ -61,7 +68,6 @@ span {
     }
 }
 
-
 body {
     padding: 0;
     margin: 0;
@@ -74,28 +80,30 @@ body {
 }
 
 body::-webkit-scrollbar{
-    width: 0.5rem;
+    width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track{
-    background: whitesmoke;
+    background: black;
+   
+   
 }
 
 body::-webkit-scrollbar-thumb{
-    background:  #016FFF;
+    background: white;
+    border-radius: 10px;
+ 
 }
 
 header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     margin: 0;
-    position: fixed;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    background-color: #016FFF;
     z-index: 3;
-    border-bottom: 1px solid white;
 }
 
 header .container {
@@ -110,42 +118,66 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    transform: scale(1);
+}
+
+header .container .logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 header .container h1 {
     margin: 0;
     color: white;
     font-size: 2.6em;
     cursor: pointer;
     font-weight: normal;
-    animation: in_out 2s infinite;
 }
-
-@keyframes in_out{
-    from {
-        transform: scale(none);
-    }
-    to {
-        transform: scale(1);
-    }
-} 
 
 header .container .user {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
 header .container p {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.85em;
     color: white;
 }
 
 header .container .user img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 22px;
+   
+    margin-left: 10px;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../img/assets/bgNight.gif');
+    margin-bottom: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider h1{
+    margin: 0;
+    font-size: 6.0em;
+    color: white;
+}
+
+.slider p{
+    margin: 0;
+    font-size: 5.0em;
+    color: white;
 }
 
 #items-wrapper .user_options {
@@ -220,8 +252,22 @@ header .container .user img {
 
 .gen_label p {
     font-size: 2.5em;
-    margin-top: 0;
-    color: rgba(60, 60, 60, 0.8);
+    margin: 0;
+    font-weight: bold;
+    margin-top: 15px;
+   
+}
+
+.gen_description{
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.gen_description p{
+    font-size: 1.8em;
+    margin: 0;
+    width: 99%;
+   
 }
 
 /* CSS DO CAROUSEL SEPARADO */
@@ -234,8 +280,8 @@ header .container .user img {
     align-items: center;
     border: 2px solid rgba(60, 60, 60, 0.2);
     border-radius: 5px;
-    margin: -25px 0px 60px 0px;
-    -webkit-animation: animate-div 0.5s;
+    margin: -25px 0px 55px 0px;
+    -webkit-animation: animate-div 0.8s;
 }
 
 @-webkit-keyframes animate-div {
@@ -420,6 +466,28 @@ header .container .user img {
     height: 190px;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;
+}
+
+/* FOOTER */
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    background-color: black;
+}
+
+
+footer .copyMessage {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+    text-align: start;
 }
 
 

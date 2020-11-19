@@ -2,8 +2,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 55px;
         width: 100%;
+        margin-bottom: 55px;
     }
     
     .carousel .button {
@@ -53,8 +53,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-width: 270px;
-        height: 170px;
+        min-width: 260px;
+        height: 160px;
         margin: 0px 20px 0px 0px;
         border: 2px solid rgba(60, 60, 60, 0.2);
         border-radius: 5px;
@@ -68,12 +68,12 @@
     }
     
     .carousel .items div img {
-        width: 90px;
+        width: 80px;
         height: auto;
         margin-bottom: 10px;
     }
     
     .carousel .items div img:last-child {
-        width: 130px;
+        width: 120px;
         height: auto;
     }

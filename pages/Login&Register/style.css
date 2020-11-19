@@ -41,21 +41,19 @@ section .container {
 }
 
 #register .card{
-    height: 680px;
+    height: auto;
     border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
    
-}
-
-#register .card .container{
-    height: 100%;
 }
 
 section .container h1 {
     font-size: 4.0em;
-    color: #016FFF;
+    color: black;
     opacity: 0.9;
-    margin-bottom: 25px;
-    margin-top: 18PX;
+    margin-bottom: 20px;
+    margin-top: 18px;
 }
 
 section .container img {
@@ -74,14 +72,23 @@ section .container input {
     outline: none;
 }
 
+section .container .msg{
+    margin: 0px 0px 5px 0px;
+    display: none;
+    width: 85%;
+    text-align: start;
+    font-size: 1.5em;
+
+}
+
 section .container button {
     width: 140px;
     height: 45px;
-    background-color: #016FFF;
+    background-color: black;
     border: none;
     outline: none;
-    border-radius: 100px;
-    margin-top: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
     font-size: 1.8em;
     color: white;
     cursor: pointer;
@@ -91,6 +98,12 @@ section .container p {
     font-size: 1.8em;
     cursor: pointer;
     margin-bottom: 0;
+}
+
+#loading {
+    display: none;
+    width: 60px;
+    margin-top: 20px;
 }
 
 @media (max-width: 550px) {
@@ -117,3 +130,4 @@ section .container p {
         background-color: white;
     }
 }
+

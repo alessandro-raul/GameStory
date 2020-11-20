@@ -1,0 +1,79 @@
+    .carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    
+    .carousel .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        max-width: 40px;
+        height: 164px;
+        margin: 0px 20px 0px 0px;
+        border: 2px solid rgba(60, 60, 60, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .carousel .button:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        max-width: 40px;
+        height: 164px;
+        margin: 0px 0px 0px 20px;
+        border: 2px solid rgba(60, 60, 60, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .carousel .button img {
+        width: 40%;
+    }
+    
+    .carousel .items {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    
+    div::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    
+    .carousel .items div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 260px;
+        height: 164px;
+        margin: 0px 20px 0px 0px;
+        border: 2px solid rgba(60, 60, 60, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .carousel .items div:hover {
+        transition: 0.5s;
+        transform: scale(0.95);
+    }
+    
+    .carousel .items div img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .carousel .items div img:last-child {
+        width: 120px;
+        height: auto;
+    }

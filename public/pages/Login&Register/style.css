@@ -1,0 +1,153 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60%;
+    background-image: url('../../img/assets/bgLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#login_error{
+    display: none;
+    margin: 0px 0px 10px 0px; 
+    color: red;
+}
+
+form{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    width: 450px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+  
+}
+
+section .container {
+    display: flex;
+    width: 85%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#register .card{
+    height: auto;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+section .container h1 {
+    font-size: 4.0em;
+    color: black;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+section .container img {
+    width: 35%;
+}
+
+section .container input {
+    width: 85%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgba(70, 70, 70, 0.4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+section .container .msg{
+    margin: 0px 0px 5px 0px;
+    display: none;
+    width: 85%;
+    text-align: start;
+    font-size: 1.5em;
+
+}
+
+section .container button {
+    width: 140px;
+    height: 45px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+section .container p {
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+#loading {
+    display: none;
+    width: 60px;
+    margin-top: 20px;
+}
+
+#loading2 {
+    display: none;
+    width: 60px;
+    margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #register .card {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .card .container {
+        width: 90%;
+    }
+    body {
+        background-color: white;
+    }
+}
+

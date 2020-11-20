@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/assets/coin.png" type="image/x-icon"/>
+    <title>GameStory</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 class="animate__animated animate__pulse">GameStory</h1>
+                <img style="width:35px" src="https://media.giphy.com/media/XzeRWmW7f5K4kZnrgB/giphy.gif" alt=""
+                    srcset="">
+            </div>
+            <a href="pages/Login&Register/index.html"><button>Login</button></a>
+        </div>
+    </header>
+
+    <div class="showcase" id="start">
+        <div class="container">
+            <h1>GameStory</h1>
+            <p>O portal que te levará ao passado dos games!</p>
+            <a href="#aboutUs"><button>Vamos lá?</button></a>
+        </div>
+    </div>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="text">
+                <h1>O que é?</h1>
+                <p>Já bateu aquela vontade de conhecer a história de seu amado videogame? E de saber seus melhores
+                    lançamentos e clássicos? Se sim, você está no lugar certo! No GameStory você encontrará desde a
+                    história, até recomendações de vídeos completíssimos
+                    sobre seu amado console (seja ele retrô, ou de nova geração), tudo de forma organizada e muito
+                    intuitiva!</p>
+            </div>
+            <img src="img/—Pngtree—design illustrator of game console_5147641.png" class="imgConsoles" alt="">
+        </div>
+    </section>
+
+    <section id="letsGo">
+        <div class="container">
+            <div class="text">
+                <h1>E aí, tá esperando o que?</h1>
+                <p>Realize seu cadatro e junte-se a nós nessa viagem.</p>
+            </div>
+            <div class="buttons">
+                <img src="img/viagemGamerCut.png" alt="">
+                <button>Cadastre-se</button>
+                <!--<p>Já possui cadastro? Se loga aí!</p>-->
+            </div>
+        </div>
+    </section>
+
+    <a href="pages/Login&Register/index.html">
+        <div class="buttonBottom">
+            <p>Login</p>
+        </div>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="text">
+                <h1>GameStory</h1>
+                <p>Mande-nos o seu feedback, ele é muito importante! ;)</p>
+            </div>
+        
+                <form id="contatoForm" method="get" class="form" action="mailto:gamestory@mail.com" target="_blank">
+                    <div class="inputsRow">
+                        <input type="text" name="nome" placeholder="Nome:">
+                        <input type="text" name="email" placeholder="Email:">
+                    </div>
+                    <input type="text" name="Subject" placeholder="Assunto">
+                    <textarea name="Body" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+        <p class="copyMessage">© Copyright GameStory. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    $(function () {
+    document.getElementById('contatoForm').addEventListener('submit', function () {
+        var nome = this.querySelector('input[name=nome]'), nome = nome.value;
+        var email = this.querySelector('input[name=email]'), email = email.value;
+        var texto = 'Olá destinatário, \nMeu nome é '+ nome +' e meu email é '+ email;
+        this.querySelector('input[name=Body]').setAttribute('value', texto);
+    });
+  });
+</script>

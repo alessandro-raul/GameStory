@@ -17,7 +17,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("../../img/assets/bgIntro.gif");
+    background-image: url("../../../img/assets/bgIntro.gif");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 3;
@@ -158,7 +158,7 @@ header .container .user img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('../../img/assets/bgNight.gif');
+    background-image: url('../../../img/assets/bgNight.gif');
     margin-bottom: 55px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ header .container .user img {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .content .console_information .container .console_title .line_row p {
@@ -372,7 +372,7 @@ header .container .user img {
 }
 
 .content .console_information .container .console_presentation p {
-    font-size: 1.9em;
+    font-size: 1.8em;
     text-align: justify;
     width: 83%;
 }
@@ -381,11 +381,13 @@ header .container .user img {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .content .console_information .container .classics {
     display: flex;
     width: 50%;
+    max-width: 670px;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -425,6 +427,7 @@ header .container .user img {
 .content .console_information .container .recommend {
     display: flex;
     width: 37.5%;
+    max-width: 520px;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -434,7 +437,7 @@ header .container .user img {
 .content .console_information .container .videos {
     display: flex;
     width: 70%;
-    max-width: 1300px;
+    max-width: 1130px;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -498,3 +501,153 @@ footer .copyMessage {
         justify-content: space-evenly;
     }
 }
+
+@media (max-width: 1400px) {
+    .content_container{
+        width: 93%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .content .console_information .container .console_presentation p {
+        width: 74%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content .console_information .container .console_presentation p {
+        width: 100%;
+    }
+
+    .content .console_information .container .console_presentation {
+        justify-content: center;
+    }
+
+    .content .console_information .container .console_title .line_row {
+        width: 90%;
+    }
+
+    .content .console_information .container .console_title{
+        align-items: center;
+        justify-content: center;
+    }
+    .content .console_information .container .console_title p{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .content .console_information .container .classics{
+        width: 60%;
+    }
+
+    .content .console_information .container .recommend {
+        width: 46.5%;
+    }
+
+    .content .console_information .container .videos{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider h1{
+        font-size: 5.2em;
+    }
+
+    .slider p{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 430px) {
+    .slider h1{
+        font-size: 4.2em;
+    }
+
+    .slider p{
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width: 450px) {
+    .intro h1{
+        font-size: 6.0em;
+        text-align: center;
+    }
+    
+    .intro p{
+        font-size: 2.0em;
+        text-align: center;
+    }
+    
+    .slider{
+        height: 100vh;
+    }
+
+    .slider h1{
+        font-size: 4.2em;
+    }
+
+    .slider p{
+        font-size: 3.4em;
+    }
+
+    .gen_label p{
+        margin: 0;
+    }
+
+    .content .console_information{
+        border: none;
+    }
+
+    .content .console_information .container .console_presentation img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .content .console_information .container .console_title{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content .console_information .container .console_presentation{
+        width: 95%;
+    }
+
+    .content .console_information .container .console_presentation p{
+        font-size: 1.7em;
+    }
+
+    .content .console_information .container .console_title .line_row p{
+        font-size: 2.5em;
+    }
+
+    .content_container{
+        width: 87%;
+    }
+
+    .content .console_information .container .console_title p{
+        font-size: 1.8em;
+    }
+
+    .content .console_information .container .console_title .line_row img{
+        width: 30px;
+    }
+
+    .content .console_information .container .game p{
+        min-height: 0;
+        margin-bottom: 20px;
+    }
+
+    .content .console_information .container{
+        margin: 20px 0px 30px 0px;
+    }
+
+    footer .copyMessage{
+        text-align: center;
+        font-size: 1.6em;
+    }
+}
+
+

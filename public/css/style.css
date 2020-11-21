@@ -100,8 +100,8 @@ header .container button:hover{
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url('img/assets/bg8.gif');
-    background-size: auto;
+    background-image: url('../img/assets/bg8.gif');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

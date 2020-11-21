@@ -77,3 +77,10 @@
         width: 120px;
         height: auto;
     }
+
+    @media (max-width: 450px) {
+        .carousel .items div{
+            min-width: 250px;
+            height: 160px;
+        }
+    }

@@ -7,8 +7,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>GameStory: Login</title>
     <link rel="icon" href="../../img/assets/coin.png" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -49,8 +49,7 @@
                     <p class="msg" id="msg_email">*Insira um email válido.</p>
                     <input type="password" placeholder="Senha" id="senhaTxt" name="senhaUsuario" onkeyup="validaSenha()" required minlength="5">
                     <p class="msg" id="msg_senha">*Insira uma senha válida (mínimo 5 caracteres: 2 numéricos)</p>
-                    <input type="password" placeholder="Confirmar Senha" id="confirmarSenhaTxt" onkeyup="validaSenha2()"
-                        required>
+                    <input type="password" placeholder="Confirmar Senha" id="confirmarSenhaTxt" onkeyup="validaSenha2()" required>
                     <p class="msg" id="msg_senha2">*As senhas devem ser idênticas.</p>
                     <button type="submit" id="btn_cadastrar">Cadastrar</button>
                 </form>

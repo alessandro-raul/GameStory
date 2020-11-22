@@ -657,7 +657,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="console_information" id="turboGfx">
                 <div class="container">
                     <div class="console_title">
@@ -761,7 +760,7 @@
                 </p>
             </div>
             <div class="carousel">
-                <div class="button" onclick="before(gen3)">
+                <div class="button" onclick="before(gen3)" style="display: none;">
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen3">
@@ -798,8 +797,283 @@
                         </div>
                     </a>
                 </div>
-                <div class="button" onclick="next(gen3)">
+                <div class="button" onclick="next(gen3)" style="display: none;">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
+                </div>
+            </div>
+            <div class="console_information" id="n64">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Nintendo 64</p>
+                            <a onclick="hideConsole(n64)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1996 - 32 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/n64/n64Console.png" alt="">
+                        <p>O Nintendo 64 foi um console de videogame da quinta geração lançado pela empresa japonesa
+                            Nintendo, em 23 de junho de 1996
+                            no Japão.
+                            Nos EUA e no Brasil foi lançado simultaneamente em 29 de setembro de 1996, e
+                            em ambos os países, havia apenas dois títulos de lançamento disponíveis: Super Mario 64 e
+                            PilotWings.
+                            O console foi anunciado em 1993 com o codename "Project Reality", com plano de lançamento
+                            para arcades em 1994 e uma versão doméstica no ano seguinte. Em 1995, foi primeiramente
+                            apresentado com o nome Nintendo Ultra 64, tendo o nome reduzido para Nintendo 64 em
+                            fevereiro de 1996 (5 meses antes do lançamento).
+                            Considerado inovador na época de seu lançamento, o console era dotado de um processador
+                            gráfico projetado pela Silicon Graphics, e também contava com um processador de
+                            áudio que permitia o uso teórico de até 100 canais de áudio PCM (o que por motivos práticos
+                            nunca foi utilizado, já consumiria todos os recursos da CPU).
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do N64</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/mario64.jpg" alt="">
+                            <p><span>Super Mario 64</span><br> (1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/zelda.jpg" alt="">
+                            <p><span>The Legend of Zelda Ocarina Of Time</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/banjo.jpg" alt="">
+                            <p><span>Banjo-Kazooie</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/smashBros.jpg" alt="">
+                            <p><span>Super Smash Bros</span><br> (1999)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/castlevania.jpg" alt="">
+                            <p><span>Castlevania Legacy Of Darkness</span><br> (1999)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/paperMario.jpg" alt="">
+                            <p><span>Paper Mario</span><br> (2000)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/n64/classicGames/starFox64.jpg" alt="">
+                            <p><span>Star Fox 64</span><br> (1997)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/HlNBbhW49PA" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Nintendo 64 - História Completa</span> <br>(Super Bit World)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/LbRA32kG46A" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br>(Velberan)</p>
+                        </div>
+
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/tEAcTuH69_g" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Coisas sobre o Nintendo 64</span> <br>(Nostalgia dos games)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="segaSaturn">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Sega Saturn</p>
+                            <a onclick="hideConsole(segaSaturn)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1994 - 32 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/saturn/saturnConsole.jpg" alt="">
+                        <p>O Sega Saturn foi um console de videogame da quinta geração com 32 bits, lançado pela empresa
+                            Sega em 22 de Novembro de 1994 no Japão.
+                            Meses depois foi lançado em outros países em: 11 de Maio de 1995 na América do Norte, 30 de
+                            agosto de 1995 no Brasil e, 8 de Julho na Europa.
+                            Tornou-se um console popular no Japão devido à seu marketing de sucesso, com o personagem
+                            Segata Sanshiro criado especialmente para o marketing do Sega Saturn, porém ele não
+                            conseguiu repetir o sucesso na América do Norte e Europa frente seus concorrentes,
+                            Playstation e Nintendo 64.
+                            De acordo com o artigo da revista americana GamePro em Julho de 2007, o Saturn vendeu 9,5
+                            milhões de unidades. O console foi descontinuado na Europa e Austrália em 1998, em Abril
+                            de 1999 na América do Norte e em 23 de Dezembro de 2000 no Japão.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do N64</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/nightDreams.jpg" alt="">
+                            <p><span>Nights into Dreams...</span><br> (1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/sonic.jpg" alt="">
+                            <p><span>Sonic Jam</span><br> (1997)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/virtuaFighter2.jpg" alt="">
+                            <p><span>Virtua Fighter 2</span><br> (1994)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/saturnBomberMan.jpg" alt="">
+                            <p><span>Saturn Bomber Man</span><br> (1996)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/guardianHeroes.jpg" alt="">
+                            <p><span>Guardian Heroes</span><br> (1996)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/sonicR.jpg" alt="">
+                            <p><span>Sonic R</span><br> (1997)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/saturn/classicGames/virtuaCop.jpg" alt="">
+                            <p><span>Virtua Cop</span><br> (1994)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/yPLrJevo7_A" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Sega Saturn - História Completa</span> <br>(Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/QGIzxo4u9lM" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br>(Velberan)</p>
+                        </div>
+
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/rtqQOCkLrZY" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Sega Saturn Vs PS1</span><br>(Joeveno)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="psone">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Playstation</p>
+                            <a onclick="hideConsole(psone)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 1994 - 32 Bits</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/psone/ps1Console.jpg" alt="">
+                        <p>O PlayStation frequentemente chamado
+                            de PlayStation 1 ou ainda PSOne, foi o primeiro console de vídeo game fabricado pela Sony,
+                            lançado em 3 de dezembro de 1994 no Japão, 9 de setembro de 1995 nos Estados Unidos e em 29
+                            de setembro de 1995 na Europa.
+                            O desenvolvimento do console começou após uma parceria fracassada com a Nintendo de
+                            desenvolver um CD-ROM para seu console Super Nintendo no início dos anos 1990. A produção de
+                            jogos para o console foi projetada para ser simplificada e inclusiva, trazendo o suporte de
+                            muitos desenvolvedoras terceiras. Em julho de 2000, uma versão melhorada e mais fina chamada
+                            de PS One foi lançada, substituindo o console cinza original e nomeado apropriadamente para
+                            evitar confusão com seu sucessor, o PlayStation 2.
+                            O PlayStation introduziu a Sony para a indústria de jogos eletrônicos. O uso de CDs para o
+                            armazenamento dos jogos no console foi uma transição dos cartuchos utilizado por outras
+                            empresas de jogos. Desde o seu lançamento até 2006, quando sua produção de jogos foi
+                            interrompida, o PlayStation vendeu mais de 100 milhões de unidades. Ocupa a posição de
+                            segundo console de mesa mais vendido no mundo, com mais de cem milhões de unidades vendidas,
+                            superado apenas pelo seu sucessor, o PlayStation 2, que teve mais de 150 milhões de unidades
+                            comercializadas.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do PS1</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/crash.jpg" alt="">
+                            <p><span>Crash Bandicoot</span><br> (1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/residentl.jpg" alt="">
+                            <p><span>Resident Evil</span><br> (1996)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/finalFantasy.jpg" alt="">
+                            <p><span>Final Fantasy VII</span><br> (1997)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/tekkem3.jpg" alt="">
+                            <p><span>Tekken 3</span><br> (1997)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/reiLeao.jpg" alt="">
+                            <p><span>Lion King</span><br> (2000)</p>
+                        </div>
+
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/residentEvil2.jpg" alt="">
+                            <p><span>Resident Evil 2</span><br> (1998)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/psone/classicGames/tonyHanks.jpg" alt="">
+                            <p><span>Tony Hawk's Pro Skater 2</span><br> (2000)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/wGzLpzQ92Bg" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>PS1 - História Completa</span> <br>(TecMundo)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/3f75vKE6pxA" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span> <br>(Velberan)</p>
+                        </div>
+
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/lu5-EwxCBlI" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>PS1 Vs Nintendo 64</span> <br>(Joeveno)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

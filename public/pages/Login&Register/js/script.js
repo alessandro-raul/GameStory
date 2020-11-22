@@ -1,3 +1,5 @@
+const { text } = require("express");
+
 function changeToLogin() {
     register.style = "display: none";
     login.style = "display: block, flex";
@@ -13,7 +15,6 @@ function validaNome(){
     if(nome.length<2){
         nomeTxt.style = 'border-color: red';
         msg_nome.style = 'display: block';
-
     }else{
         nomeTxt.style = 'border-color: green';
         msg_nome.style = 'display: none';
@@ -25,7 +26,6 @@ function validaEmail(){
     if(email.indexOf('@')>0 && email.indexOf('.com')>0){
         emailTxt.style = 'border-color:green';
         msg_email.style = 'display: none';
-
     }else{
         emailTxt.style = 'border-color:red';
         msg_email.style = 'display: block';
@@ -37,7 +37,6 @@ function validaSenha(){
     if(senha.length<5){
         senhaTxt.style = 'border-color:red';
         msg_senha.style = 'display: block';
-
     }else{
         senhaTxt.style = 'border-color:green';
         msg_senha.style = 'display: none';
@@ -58,7 +57,6 @@ function validaSenha2(){
         btn_cadastrar.setAttribute('disabled', 'disabled');    
     }
 }
-
 
 function aguardar(){
     btn_cadastrar.style = 'display: none';
@@ -97,12 +95,11 @@ function cadastrar() {
         } else {
             console.log('Erro de cadastro!');
             response.text().then(function (resposta) {
-                div_erro.innerHTML = resposta;
+                alert(resposta);
             });
             finalizar_aguardar();
         }
     });
-
     return false;
 }
 
@@ -122,16 +119,16 @@ function entrar() {
         } else{
             console.log('Erro de login!');
             resposta.text().then(texto => {
-                console.error(texto);
                 finalizar_aguardar();
-                exibir_mensagem_falha();
+                exibir_mensagem_falha(texto);
             });
         }
     });
     return false;
 }
 
-function exibir_mensagem_falha(){
+function exibir_mensagem_falha(texto){
+    login_error.innerHTML = texto;
     login_error.style = 'display: block';
     email_log.style = 'border-color: red';
     senha_log.style = 'border-color: red';

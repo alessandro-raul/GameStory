@@ -23,6 +23,7 @@ a {
 #login_error{
     display: none;
     margin: 0px 0px 10px 0px; 
+    text-align: center;
     color: red;
 }
 

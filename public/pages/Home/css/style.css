@@ -168,12 +168,14 @@ header .container .user img {
     margin: 0;
     font-size: 6.0em;
     color: white;
+    text-align: center;
 }
 
 .slider p{
     margin: 0;
     font-size: 5.0em;
     color: white;
+    text-align: center;
 }
 
 #items-wrapper .user_options {
@@ -573,12 +575,10 @@ footer .copyMessage {
 @media (max-width: 450px) {
     .intro h1{
         font-size: 6.0em;
-        text-align: center;
     }
     
     .intro p{
         font-size: 2.0em;
-        text-align: center;
     }
     
     .slider{

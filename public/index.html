@@ -8,9 +8,10 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/assets/coin.png" type="image/x-icon"/>
+    <link rel="icon" href="img/assets/coin.png" type="image/x-icon" />
+    <script src="script.js"></script>
     <title>GameStory</title>
-    
+
 </head>
 
 <body>
@@ -73,29 +74,23 @@
                 <h1>GameStory</h1>
                 <p>Mande-nos o seu feedback, ele é muito importante! ;)</p>
             </div>
-        
-                <form id="contatoForm" method="get" class="form" action="mailto:gamestory@mail.com" target="_blank">
-                    <div class="inputsRow">
-                        <input type="text" name="nome" placeholder="Nome:">
-                        <input type="text" name="email" placeholder="Email:">
-                    </div>
-                    <input type="text" name="Subject" placeholder="Assunto">
-                    <textarea name="Body" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+            <form id="form_cadastro" name="form_cadastro" method="POST" class="form" onsubmit="return cadastrar()">
+                <div class="inputsRow">
+                    <input type="text" id="nome" name="nome" placeholder="Nome:" required minlength="3">
+                    <input type="email" id="email" name="email" placeholder="Email:" required>
+                </div>
+                <select name="assunto" id="assunto" required>
+                    <option value="">Assunto</option>
+                    <option value="Critica">Crítica</option>
+                    <option value="Opinião">Opinião</option>
+                    <option value="Sugestão">Sugestão</option>
+                </select>
+                <textarea name="feedback" id="mensagem" cols="30" rows="10" placeholder="Mensagem:" required minlength="10"></textarea>
+                <img id="loading" src="img/assets/loading3.gif" alt="">
+                <button id="btn_enviar" type="submit">Enviar</button>
+            </form>
         </div>
         <p class="copyMessage">© Copyright GameStory. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
-
-<script>
-    $(function () {
-    document.getElementById('contatoForm').addEventListener('submit', function () {
-        var nome = this.querySelector('input[name=nome]'), nome = nome.value;
-        var email = this.querySelector('input[name=email]'), email = email.value;
-        var texto = 'Olá destinatário, \nMeu nome é '+ nome +' e meu email é '+ email;
-        this.querySelector('input[name=Body]').setAttribute('value', texto);
-    });
-  });
-</script>

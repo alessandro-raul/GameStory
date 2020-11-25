@@ -6,6 +6,10 @@ span {
     font-weight: bold;
 }
 
+a{
+    color: black;
+}
+
 .span2 {
     color: #016FFF;
 }
@@ -43,10 +47,12 @@ span {
 }
 
 #goodbye h1{
+    text-align: center;
     color: black;
 }
 
 #goodbye p{
+    text-align: center;
     color: black;
 }
 

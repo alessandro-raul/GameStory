@@ -48,7 +48,6 @@ function realiza_animacao(){
         hello_user.setAttribute('class', 'animate__animated animate__fadeInLeft');
         welcome_user.setAttribute('class','animate__animated animate__fadeInRight');
     }, 2700);
-    
 }
 
 function redirecionar_login(){

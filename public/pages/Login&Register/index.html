@@ -7,49 +7,53 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
     <title>GameStory: Login</title>
     <link rel="icon" href="../../img/assets/coin.png" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <section id="login">
         <div class="card">
             <div class="container">
-                <img src="../../img/sonic.png" alt="">
+                <img src="../../img/assets/sonic.png" alt="">
                 <a href="../../index.html">
                     <h1>GameStory</h1>
                 </a>
                 <p id="login_error"></p>
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     <input type="email" placeholder="Email" id="email_log" name="emailUsuario" required>
-                    <input type="password" placeholder="Senha" id="senha_log" name="senhaUsuario" required minlength="5">
+                    <input type="password" placeholder="Senha" id="senha_log" name="senhaUsuario" required
+                        minlength="5">
                     <button type="submit" id="btn_logar">Login</button>
-                 </form>
-                    <a onclick="changeToRegister()">
-                        <p id="btn_nao_possui">Não possui cadastro?</p>
-                    </a>
-                    <img id="loading2" src="../../img/assets/loading3.gif" alt="">
+                </form>
+                <a onclick="changeToRegister()">
+                    <p id="btn_nao_possui">Não possui cadastro?</p>
+                </a>
+                <img id="loading2" src="../../img/assets/loading3.gif" alt="">
             </div>
         </div>
     </section>
     <section id="register" style="display: none;">
         <div class="card">
             <div class="container" id="containere">
-                <img src="../../img/sonic.png" alt="">
+                <img src="../../img/assets/sonic.png" alt="">
                 <a href="../../index.html">
                     <h1>GameStory</h1>
                 </a>
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                    <input type="text" placeholder="Nome" id="nomeTxt" name="nomeUsuario"onkeyup="validaNome()" required>
+                    <input type="text" placeholder="Nome" id="nomeTxt" name="nomeUsuario" onkeyup="validaNome()"
+                        required>
                     <p class="msg" id="msg_nome">*Insira um nome válido.</p>
-                    <input type="text" placeholder="Email" id="emailTxt" name="emailUsuario" onkeyup="validaEmail()" required>
+                    <input type="text" placeholder="Email" id="emailTxt" name="emailUsuario" onkeyup="validaEmail()"
+                        required>
                     <p class="msg" id="msg_email">*Insira um email válido.</p>
-                    <input type="password" placeholder="Senha" id="senhaTxt" name="senhaUsuario" onkeyup="validaSenha()" required minlength="5">
+                    <input type="password" placeholder="Senha" id="senhaTxt" name="senhaUsuario" onkeyup="validaSenha()"
+                        required minlength="5">
                     <p class="msg" id="msg_senha">*Insira uma senha válida (mínimo 5 caracteres: 2 numéricos)</p>
-                    <input type="password" placeholder="Confirmar Senha" id="confirmarSenhaTxt" onkeyup="validaSenha2()" required>
+                    <input type="password" placeholder="Confirmar Senha" id="confirmarSenhaTxt" onkeyup="validaSenha2()"
+                        required>
                     <p class="msg" id="msg_senha2">*As senhas devem ser idênticas.</p>
                     <button type="submit" id="btn_cadastrar">Cadastrar</button>
                 </form>
@@ -61,4 +65,6 @@
         </div>
     </section>
 </body>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </html>

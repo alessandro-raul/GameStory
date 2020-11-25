@@ -7,6 +7,7 @@ function changeToLogin() {
 
 function changeToRegister() {
     register.style = "display: block, flex";
+    register.style = "animation: flipOutY"
     login.style = "display: none";
 }
 

@@ -6,6 +6,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 section {
@@ -14,6 +15,7 @@ section {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    -webkit-animation: fade_out 0.8s;
 }
 
 a {
@@ -43,7 +45,9 @@ form{
     align-items: center;
     background-color: white;
     border-radius: 5px;
-  
+    animation: fadeIn;
+    animation-duration: 0.8s;
+
 }
 
 section .container {
@@ -60,6 +64,8 @@ section .container {
     border-radius: 5px;
     padding-top: 50px;
     padding-bottom: 50px;
+    animation: fadeIn;
+    animation-duration: 0.8s;
    
 }
 

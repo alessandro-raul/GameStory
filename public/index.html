@@ -8,13 +8,11 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/assets/coin.png" type="image/x-icon" />
-    <script src="script.js"></script>
+    <link rel="icon" href="img/assets/coin.png" type="image/x-icon" />  
     <title>GameStory</title>
-
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="container">
             <div class="logo">
@@ -44,7 +42,7 @@
                     sobre seu amado console (seja ele retrô, ou de nova geração), tudo de forma organizada e muito
                     intuitiva!</p>
             </div>
-            <img src="img/—Pngtree—design illustrator of game console_5147641.png" class="imgConsoles" alt="">
+            <img src="img/assets/familyConsole.png" class="imgConsoles" alt="">
         </div>
     </section>
 
@@ -55,9 +53,8 @@
                 <p>Realize seu cadatro e junte-se a nós nessa viagem.</p>
             </div>
             <div class="buttons">
-                <img src="img/viagemGamerCut.png" alt="">
+                <img src="img/assets/viagemGamerCut.png" alt="">
                 <button>Cadastre-se</button>
-                <!--<p>Já possui cadastro? Se loga aí!</p>-->
             </div>
         </div>
     </section>
@@ -85,7 +82,7 @@
                     <option value="Opinião">Opinião</option>
                     <option value="Sugestão">Sugestão</option>
                 </select>
-                <textarea name="feedback" id="mensagem" cols="30" rows="10" placeholder="Mensagem:" required minlength="10"></textarea>
+                <textarea name="feedback" id="mensagem" cols="30" rows="10" placeholder="Mensagem:" required minlength="10" maxlength="150"></textarea>
                 <img id="loading" src="img/assets/loading3.gif" alt="">
                 <button id="btn_enviar" type="submit">Enviar</button>
             </form>
@@ -93,4 +90,6 @@
         <p class="copyMessage">© Copyright GameStory. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </html>

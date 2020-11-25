@@ -29,20 +29,34 @@ function cadastrar(){
             finalizar_aguardar();
             mostrar_mensagem_sucesso();
         } else {
-            alert('Erro no cadastro');
             console.log('Erro de cadastro!');
             response.text().then(function (resposta) {
-                alert(resposta);
+                console.log(resposta);
             });
             finalizar_aguardar();
+            mostrar_mensagem_erro();
         }
     });
     return false;
 }
 
 function mostrar_mensagem_sucesso(){
-
+    Swal.fire(
+        'Boa!',
+        'Feedback enviado com sucesso ;)',
+        'success'
+      );
     limpar_campos();
+}
+
+function mostrar_mensagem_erro(){
+    Swal.fire({
+        title: 'Ops!',
+        text: 'Parece que algo deu errado...',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      });
+      limpar_campos();
 }
 
 function limpar_campos(){
@@ -51,3 +65,7 @@ function limpar_campos(){
     assunto.value = '';
     mensagem.value = '';
 }
+
+
+
+    

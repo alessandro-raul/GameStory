@@ -5,8 +5,7 @@ var consoleAnterior = "";
 var usuario;
 var login_usuario;
 
-inicia_sessao();
-realiza_animacao();
+document.ready(inicia_sessao());
 
 function inicia_sessao(){
     usuario = sessionStorage.getItem('nomeUsuario');
@@ -17,7 +16,9 @@ function inicia_sessao(){
 function verifica_sessao(){
     if (usuario == undefined)  {
         redirecionar_login();
-    } 
+    }else{
+        realiza_animacao();
+    }
 }
 
 function realiza_animacao(){
@@ -34,7 +35,7 @@ function realiza_animacao(){
             intro.style = 'display: none'
             body.style = 'overflow-y: auto'
             body.style.setProperty('-webkit-animation', 'fade_in 0.5s'); 
-            if(hora>6 && hora<12){
+            if(hora>=6 && hora<12){
             hello_user.innerHTML = `Bom dia, ${usuario}`;
             }else if (hora>=12 && hora<18){
                 hello_user.innerHTML = `Boa tarde, ${usuario}`;

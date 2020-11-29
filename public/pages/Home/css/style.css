@@ -43,7 +43,7 @@ a{
 #goodbye{
    display: none;
    background-image: none;
-   -webkit-animation: fade_in 0.5s; 
+   animation: fade_in 0.5s; 
 }
 
 #goodbye h1{
@@ -56,20 +56,24 @@ a{
     color: black;
 }
 
-@-webkit-keyframes fade_in {
+@keyframes fade_in {
     from {
+        display: none;
         opacity: 0;
     }
     to {
+        display: block;
         opacity: 1;
     }
 }
 
-@-webkit-keyframes fade_out {
+@keyframes fade_out {
     from {
+        display: block;
         opacity: 1;
     }
     to {
+        display: none;
         opacity: 0;
     }
 }
@@ -172,64 +176,16 @@ header .container .user img {
 
 .slider h1{
     margin: 0;
-    font-size: 6.0em;
+    font-size: 6.5em;
     color: white;
     text-align: center;
 }
 
 .slider p{
     margin: 0;
-    font-size: 5.0em;
+    font-size: 4.5em;
     color: white;
     text-align: center;
-}
-
-#items-wrapper .user_options {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 190px;
-    height: 105px;
-    background-color: #016FFF;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    z-index: 2;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin-top: 80px;
-    padding-top: 15px;
-    margin-right: 3.5%;
-    visibility: hidden;
-}
-
-#items-wrapper .user_options p {
-    margin: 10px 0px 10px 0px;
-    z-index: 2;
-    font-size: 1.7em;
-    position: relative;
-}
-
-#items-wrapper .user_options .edit_profile,
-.logout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 65%;
-    padding: 0px 10px 0px 10px;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-
-#items-wrapper .user_options .edit_profile:hover,
-.logout:hover {
-    background-color: #0d53ad;
-    transition: 0.2s;
-}
-
-#items-wrapper .user_options .edit_profile img,
-.logout img {
-    width: 15px;
 }
 
 .content {
@@ -592,11 +548,11 @@ footer .copyMessage {
     }
 
     .slider h1{
-        font-size: 4.2em;
+        font-size: 3.6em;
     }
 
     .slider p{
-        font-size: 3.4em;
+        font-size: 3.0em;
     }
 
     .gen_label p{

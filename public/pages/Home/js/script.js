@@ -5,7 +5,7 @@ var consoleAnterior = "";
 var usuario;
 var login_usuario;
 
-document.ready(inicia_sessao());
+inicia_sessao();
 
 function inicia_sessao(){
     usuario = sessionStorage.getItem('nomeUsuario');
@@ -17,7 +17,13 @@ function verifica_sessao(){
     if (usuario == undefined)  {
         redirecionar_login();
     }else{
-        realiza_animacao();
+        setTimeout(() => {
+            title.style = "display: block";
+            subtitle.style = "display: block";
+            title.setAttribute('class', 'animate__animated animate__zoomInDown');
+            subtitle.setAttribute('class', 'animate__animated animate__zoomInUp');
+            realiza_animacao();
+        }, 500);
     }
 }
 
@@ -65,7 +71,7 @@ function hideConsole(console) {
     console.style.setProperty('-webkit-animation', 'animate-div-out 0.8s');
    setTimeout(() => {
        console.style = 'display: none';
-   }, 500);
+   }, 700);
 }
 
 function next(gen) {

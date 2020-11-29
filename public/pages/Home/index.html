@@ -15,8 +15,8 @@
 </head>
 
 <section class="intro" id="intro">
-    <h1 class="animate__animated animate__zoomInDown" id="title">GameStory</h1>
-    <p class="animate__animated animate__zoomInUp" id="subtitle">Sua viagem começa agora...</p>
+    <h1 style="display: none;" id="title">GameStory</h1>
+    <p style="display: none;" id="subtitle">Sua viagem começa agora...</p>
 </section>
 <section class="intro" id="goodbye">
     <h1 class="animate__animated animate__fadeInDown" id="see_you">Até a próxima...</h1>
@@ -2041,14 +2041,15 @@
                             original, é o segundo console da série Xbox. Ele competiu com o PlayStation 3 da Sony e o
                             Wii da Nintendo como parte da sétima geração de consoles. Foi oficialmente anunciado na MTV
                             em 12 de maio de 2005, com lançamento detalhado e informações dos jogos anunciadas mais
-                            tarde na edição de 2005 da E3.
+                            tarde na edição de 2005 da E3.<br>
                             O Xbox 360 possui um serviço online, a Xbox Live, que foi expandida a partir de sua iteração
                             anterior no Xbox original e recebeu atualizações regulares durante a vida útil do console.
                             Disponível em variedades gratuitas e baseadas em assinatura, a Xbox Live permite aos
                             usuários jogar jogos online; baixar jogos (através da Xbox Live Arcade) e demos; comprar e
                             transmitir músicas, programas de televisão e filmes através dos portais Xbox Music e Xbox
                             Video e acessar serviços de conteúdo de terceiros através de aplicativos de transmissão de
-                            mídia. Além dos recursos multimídia on-line, ele permite aos usuários transmitir mídia de
+                            mídia.<br> 
+                            Além dos recursos multimídia on-line, ele permite aos usuários transmitir mídia de
                             PCs locais. Vários periféricos foram lançados, incluindo controles sem fio, discos rígidos
                             com armazenamento expandido e a câmera sensora de movimentos: o Kinect. O lançamento desses
                             serviços adicionais e periféricos ajudou a marca Xbox a crescer a partir de jogos para
@@ -2116,6 +2117,139 @@
                     </div>
                 </div>
             </div>
+
+            <div class="gen_label">
+                <p>8ª Geração (2013 - atual)</p>
+            </div>
+            <div class="gen_description">
+                <p>
+                    A Oitava geração de consoles foi iniciada com o lançamento do console de videogame Wii U (em
+                    novembro de 2012) pela fabricante Nintendo. Também fazem parte o: PlayStation 4 (lançado em 15 de
+                    novembro de 2013 nos Estados Unidos), Xbox One (22 de novembro de 2013) e o Nintendo Switch (03 de
+                    março de 2017). Juntos os consoles da 8° geração já ultrapassaram a barreira de 190 milhões de
+                    unidades vendidas mundialmente
+                </p>
+            </div>
+            <div class="carousel">
+                <div class="items" id="gen8">
+                    <a onclick="showConsole(wiiU)">
+                        <div>
+                            <img style="width: 100px;" src="../../img/wiiU/splatoon.png" alt="">
+                            <img style="width: 85px;" src="../../img/wiiU/logo.png" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a onclick="showConsole(ps4)">
+                        <div>
+                            <img style="width: 110px; margin-bottom: 0" src="../../img/ps4/spider.png" alt="">
+                            <img src="../../img/ps4/logo.png" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a onclick="showConsole(xboxOne)">
+                        <div>
+                            <img style="width: 120px; margin-bottom: 2px; margin-top: 10px;"
+                                src="../../img/xboxOne/halo.png" alt="">
+                            <img src="../../img/xboxOne/logo.png" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a onclick="showConsole(NintendoSwitch)">
+                        <div>
+                            <img style="width: 110px;" src="../../img/nintendoSwitch/link.png" alt="">
+                            <img src="../../img/nintendoSwitch/logo.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="console_information" id="wiiU">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Nintendo Wii U</p>
+                            <a onclick="hideConsole(wiiU)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 2012</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/wiiU/wiiuConsole.png" alt="">
+                        <p>O Wii U é um console de videogames doméstico desenvolvido pela Nintendo como sucessor do Wii.
+                            Lançado no final de 2012, é o primeiro console de videogames da oitava geração e
+                            competiu com o Xbox One da Microsoft e o PlayStation 4 da Sony.
+                            Foi o primeiro console da Nintendo a suportar gráficos HD, tendo como controle principal 
+                            o Wii U GamePad, que possui uma tela sensível ao toque incorporada, botões
+                            direcionais, alavancas analógicas e gatilhos. A tela pode ser usada como um complemento para
+                            a tela principal ou para jogar o jogo diretamente no GamePad.<br>
+                            O console recebeu uma recepção geralmente positiva, que incluiu elogios por seu controle
+                            inovador, melhorias na funcionalidade online do Wii, compatibilidade com os softwares e
+                            acessórios do Wii e acessibilidade relativa. No entanto, também foi criticado pela
+                            curta duração da bateria do GamePad e problemas com a interface do usuário e a
+                            funcionalidade do console, e foi recebido com uma adoção lenta do
+                            consumidores, com baixas vendas que foram creditadas principalmente à uma linha fraca de
+                            títulos de lançamento, suporte limitado de third-parties e marketing ruim. A
+                            produção do Wii U terminou oficialmente em janeiro de 2017.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do Wii U</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/splatoon.png" alt="">
+                            <p><span>Splatoon</span><br> (2015)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/marioMaker.jpg" alt="">
+                            <p><span>Super Mario Maker</span><br> (2015)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/mk8.jpg" alt="">
+                            <p><span>Mario Kart 8</span><br> (2014)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/dk.jpg" alt="">
+                            <p><span>Donkey Kong Country: Tropical Freeze</span><br> (2014)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/bayonetta2.jpg" alt="">
+                            <p><span>Bayonetta 2</span><br> (2014)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/yoshi.jpg" alt="">
+                            <p><span>Yoshi´s Woolly World</span><br> (2015)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/wiiU/classicGames/mario3d.jpg" alt="">
+                            <p><span>Super Mario 3D World</span><br> (2013)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/e0_k0WFhZWw" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>WiiU - História e legado</span><br> (Velberan)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/NBQOtg60ZaU" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>10 Motivos do fracasso do WiiU</span><br> (ColoniaContraAtaca)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/yuW6Ioybpwc" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 Jogos indispensáveis</span><br> (Velberan)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
     </section>
@@ -2124,6 +2258,5 @@
     </footer>
 </body>
 <script src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </html>

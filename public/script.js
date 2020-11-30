@@ -66,6 +66,8 @@ function limpar_campos(){
     mensagem.value = '';
 }
 
-
+function redirecionar_cadastro(){
+    window.location.href = "pages/Login&Register/index.html?true"
+}
 
     

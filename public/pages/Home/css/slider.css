@@ -8,6 +8,7 @@
     
     .carousel .button {
         display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         min-width: 40px;
@@ -21,6 +22,7 @@
     
     .carousel .button:last-child {
         display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         min-width: 40px;
@@ -84,3 +86,11 @@
             height: 160px;
         }
     }
+
+    @media (max-width :1557px){
+        .carousel .button{
+             display: block; 
+             display: flex;
+         }
+     }
+ 

@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-
 var express = require('express');
 var router = express.Router();
 
@@ -8,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-const name = "game story";
+/*const name = "game story";
 const user = "gamestorysuporte@gmail.com";
 const pass = "gamestory20042002";
 
@@ -30,6 +29,6 @@ router.get('/send', (req, res) => {
   }).catch(error =>{
     res.send(error)
   })
-})
+})*/
 
 module.exports = router;

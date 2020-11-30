@@ -1,4 +1,14 @@
-const { text } = require("express");
+pegaParametro();
+
+function pegaParametro(){
+    var url = window.location.href;
+    var res = url.split('?');
+
+    if(res[1] != undefined){
+        login.style = "display: none";
+        register.style = "display:block, flex";
+    }
+}
 
 function changeToLogin() {
     register.style = "display: none";

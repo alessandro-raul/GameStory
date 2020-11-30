@@ -14,9 +14,9 @@
     <link rel="icon" href="../../img/assets/coin.png" type="image/x-icon" />
 </head>
 
-<section class="intro" id="intro">
-    <h1 style="display: none;" id="title">GameStory</h1>
-    <p style="display: none;" id="subtitle">Sua viagem começa agora...</p>
+<section rel="preload" class="intro" id="intro">
+    <h1 id="title">GameStory</h1>
+    <p id="subtitle">Sua viagem começa agora...</p>
 </section>
 <section class="intro" id="goodbye">
     <h1 class="animate__animated animate__fadeInDown" id="see_you">Até a próxima...</h1>
@@ -27,7 +27,7 @@
     <div class="container">
         <div class="logo">
             <h1>GameStory</h1>
-            <img style="width:35px" src="https://media.giphy.com/media/XzeRWmW7f5K4kZnrgB/giphy.gif" alt="" srcset="">
+            <img src="https://media.giphy.com/media/XzeRWmW7f5K4kZnrgB/giphy.gif" alt="" srcset="">
         </div>
         <a onclick="logout()">
             <div class="user">
@@ -890,7 +890,7 @@
                 </p>
             </div>
             <div class="carousel">
-                <div class="button" onclick="before(gen5)" style="display: none;">
+                <div class="button" onclick="before(gen5)" id="btn_prev_gen5">
                     <img src="../../img/assets/angle-left-solid.png" alt="">
                 </div>
                 <div class="items" id="gen5">
@@ -927,7 +927,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="button" onclick="next(gen5)" style="display: none;">
+                <div class="button" onclick="next(gen5)" id="btn_next_gen5">
                     <img src="../../img/assets/angle-right-solid.png" alt="">
                 </div>
             </div>
@@ -2048,7 +2048,7 @@
                             usuários jogar jogos online; baixar jogos (através da Xbox Live Arcade) e demos; comprar e
                             transmitir músicas, programas de televisão e filmes através dos portais Xbox Music e Xbox
                             Video e acessar serviços de conteúdo de terceiros através de aplicativos de transmissão de
-                            mídia.<br> 
+                            mídia.<br>
                             Além dos recursos multimídia on-line, ele permite aos usuários transmitir mídia de
                             PCs locais. Vários periféricos foram lançados, incluindo controles sem fio, discos rígidos
                             com armazenamento expandido e a câmera sensora de movimentos: o Kinect. O lançamento desses
@@ -2151,7 +2151,7 @@
                             <img src="../../img/xboxOne/logo.png" alt="" srcset="">
                         </div>
                     </a>
-                    <a onclick="showConsole(NintendoSwitch)">
+                    <a onclick="showConsole(nintendoSwitch)">
                         <div>
                             <img style="width: 110px;" src="../../img/nintendoSwitch/link.png" alt="">
                             <img src="../../img/nintendoSwitch/logo.png" alt="" srcset="">
@@ -2176,7 +2176,7 @@
                         <p>O Wii U é um console de videogames doméstico desenvolvido pela Nintendo como sucessor do Wii.
                             Lançado no final de 2012, é o primeiro console de videogames da oitava geração e
                             competiu com o Xbox One da Microsoft e o PlayStation 4 da Sony.
-                            Foi o primeiro console da Nintendo a suportar gráficos HD, tendo como controle principal 
+                            Foi o primeiro console da Nintendo a suportar gráficos HD, tendo como controle principal
                             o Wii U GamePad, que possui uma tela sensível ao toque incorporada, botões
                             direcionais, alavancas analógicas e gatilhos. A tela pode ser usada como um complemento para
                             a tela principal ou para jogar o jogo diretamente no GamePad.<br>
@@ -2246,6 +2246,270 @@
                             <iframe class="imgVideo" src="https://www.youtube.com/embed/yuW6Ioybpwc" frameborder="0"
                                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <p><span>7 Jogos indispensáveis</span><br> (Velberan)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="ps4">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Playstation 4</p>
+                            <a onclick="hideConsole(ps4)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 2013</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/ps4/ps4Console.jpg" alt="">
+                        <p>O PlayStation 4 é um console da oitava geração com arquitetura x86, produzida pela empresa
+                            Sony
+                            Interactive Entertainment lançado em Novembro de 2013, como a quarta edição da série
+                            PlayStation, sucessor do PlayStation 3, competindo diretamente com o Wii U da Nintendo e,
+                            com o Xbox One da Microsoft.
+                            Foi anunciado em Fevereiro de 2013 durante uma conferência de imprensa da Sony em Nova
+                            Iorque, no evento "PlayStation Meeting 2013" cujo tema foi "O Futuro da PlayStation". Foi
+                            lançado na América do Norte a 15 de Novembro de 2013, na Europa e América do Sul a 29 de
+                            Novembro de 2013 e no Japão a 22 de Fevereiro de 2014. O PlayStation 4 é o primeiro console
+                            da Sony a ser oficialmente e legalmente editada na China desde o PlayStation 2, depois do
+                            levantamento da proibição que durou 14 anos.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do PS4</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/godOfWar.jpg" alt="">
+                            <p><span>God Of War</span><br> (2018)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/spiderMan.jpg" alt="">
+                            <p><span>Spider-Man</span><br> (2018)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/theLastOfUs2.png" alt="">
+                            <p><span>The Last Of Us II</span><br> (2020)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/horizonZeroDawn.jpg" alt="">
+                            <p><span>Horizon Zero Dawn</span><br> (2014)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/uncharted4.jpg" alt="">
+                            <p><span>Uncharted 4</span><br> (2016)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/theWitcher3.jpg" alt="">
+                            <p><span>The Witcher 3</span><br> (2015)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/ps4/classicGames/bloodborne.jpg" alt="">
+                            <p><span>Bloodborne</span><br> (2015)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/KAXN4JCAwHc" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>5 Games que todo dono de PS4 precisa ter</span><br> (Sidão do Game)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/4-W850-ufUs" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Todos os modelos do PS4</span><br> (Joeveno)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/6noBXsY5hoU" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>10 melhores exclusivos do PS4</span><br> (The Enemy)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="xboxOne">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Xbox One</p>
+                            <a onclick="hideConsole(xboxOne)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 2013</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/xboxOne/xboxConsole.jpg" alt="">
+                        <p>Xbox One é um console de videojogos, da oitava geração, produzida pela empresa Microsoft,
+                            lançado em 2013, como a terceira edição da série Xbox e, sucessor do Xbox 360. Competindo
+                            diretamente com os consoles PlayStation 4 e Nintendo Switch. Introduzido no mercado
+                            oito anos após o lançamento do Xbox 360. O Xbox One apresenta jogos com gráficos de alta
+                            definição superiores aos vistos no seu antecessor. Foi anunciado no dia 21 de maio de 2013,
+                            apresentado ao público pelo presidente de negócios de entretenimento interativo da
+                            Microsoft, Don Mattrick, no evento especial Xbox Reveal, como o sucessor do Xbox 360. Seu
+                            lançamento oficial foi feito em novembro de 2013 custando US$ 499,00 (€ 499,00 ou R$
+                            2.299,00). O codinome de desenvolvimento do Xbox One foi denominado de Durango e foi
+                            anunciado oficialmente no dia 21 de maio de 2013.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do Xbox One</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/gears.jpg" alt="">
+                            <p><span>Gears 5</span><br> (2019)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/halo5.jpg" alt="">
+                            <p><span>Halo 5</span><br> (2015)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/susnsetOverdrive.jpg" alt="">
+                            <p><span>Sunset Overdrive</span><br> (2014)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/quantumBreak.jpg" alt="">
+                            <p><span>Quantum Break</span><br> (2015)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/forza4.jpg" alt="">
+                            <p><span>Forza Horizon 4</span><br> (2016)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/fortnite.jpg" alt="">
+                            <p><span>Fortnite</span><br> (2017)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/xboxOne/classicGames/rocketLeague.jpg" alt="">
+                            <p><span>Rocket League</span><br> (2015)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/TsBvfPBhuLQ" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>7 jogos incriveís na história do Xbox One</span><br> (SPL Games)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/DUeSkr4zqbE" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Ainda vale a pena comprar?</span><br> (Pedro Augusto)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/pmm8VfJYIVg" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>O melhor video game para o natal!</span><br> (Coisa de Nerd)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console_information" id="nintendoSwitch">
+                <div class="container">
+                    <div class="console_title">
+                        <div class="line_row">
+                            <p>Nintendo Switch</p>
+                            <a onclick="hideConsole(nintendoSwitch)">
+                                <img src="../../img/assets/times-solid.png" alt="">
+                            </a>
+                        </div>
+                        <p>Lançado em 2017</p>
+                    </div>
+                    <div class="console_presentation">
+                        <img src="../../img/nintendoSwitch/switchConsole.jpg" alt="">
+                        <p>O Nintendo Switch, chamado durante seu desenvolvimento de NX,
+                            é um console de videogame híbrido produzido pela empresa Nintendo, tendo sido revelado em 20
+                            de outubro de 2016. Foi lançado oficialmente no dia 3 de março de 2017, e o preço de
+                            lançamento é de US$299,99. Na ocasião do lançamento, a Sony e a Microsoft, principais
+                            concorrentes da Nintendo, usaram o Twitter para comemorar o novo console.
+                            O Switch se trata de um console híbrido semelhante a um tablet, o qual pode ser acoplado a
+                            um dock e, assim, ser transformado em um console de mesa. O console também conta com dois
+                            controles sem fio acopláveis de cada lado, chamados pela Nintendo de Joy-Con, que podem ser
+                            usados individualmente ou ser acoplados à unidade principal (no modo portátil) ou a uma base
+                            semelhante a um gamepad (no modo caseiro).
+                            Apesar do console ser um híbrido e aparentar ter a forma de um portátil, a Nintendo reforçou
+                            várias vezes que o Nintendo Switch é primeiramente um console de mesa e que este não irá
+                            suceder o Nintendo 3DS. Além disso, aos poucos o console substituiu totalmente o seu
+                            antecessor, o Wii U, inclusive tendo jogos que foram originalmente lançados e planejados
+                            para o mesmo, tais como Mario Kart 8 e The Legend of Zelda: Breath of the Wild.
+                        </p>
+                    </div>
+                    <div class="labels">
+                        <p>Clássicos do Switch</p>
+                    </div>
+                    <div class="classics">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/zelda.jpg" alt="">
+                            <p><span>TLOZ: Breath Of The Wild</span><br> (2017)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/mario.jpg" alt="">
+                            <p><span>Super Mario Odyssey</span><br> (2017)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/marioMaker2.jpg" alt="">
+                            <p><span>Super Mario Maker 2</span><br> (2019)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/animalCrossing.jpg" alt="">
+                            <p><span>Animal Crossing: New Horizons</span><br> (2020)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Recomendações</p>
+                    </div>
+                    <div class="recommend">
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/splatoon2.jpg" alt="">
+                            <p><span>Splatoon 2</span><br> (2017)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/luigisMansion3.jpg" alt="">
+                            <p><span>Luigi´s Mansion 3</span><br> (2020)</p>
+                        </div>
+                        <div class="game">
+                            <img class="imgGame" src="../../img/nintendoSwitch/classicGames/marioRabbids.jpg" alt="">
+                            <p><span>Mario + Rabbids</span><br> (2017)</p>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos">
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/9H9TBpZwb_0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>O Switch é pra você?</span><br> (be!Tech)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/jZdH1057jRE" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Switch passa o SNES</span><br> (The Enemy)</p>
+                        </div>
+                        <div class="game">
+                            <iframe class="imgVideo" src="https://www.youtube.com/embed/vYVdmbpFmCU" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p><span>Nintendo Switch Unboxing</span><br> (Coisa de Nerd)</p>
                         </div>
                     </div>
                 </div>

@@ -21,11 +21,14 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("../../../img/assets/bgIntro.gif");
+    background-image: url("../../../img/assets/bg6.gif");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-color: black;
+    background-repeat: repeat;
     z-index: 3;
     overflow-x: hidden;
+    animation: fade_in 0.5s;
+
 }
 
 .intro h1{
@@ -40,9 +43,14 @@ a{
     color: white;
 }
 
+#title, #subtitle{
+    display: none;
+}
+
 #goodbye{
    display: none;
    background-image: none;
+   background-color: white;
    animation: fade_in 0.5s; 
 }
 
@@ -135,6 +143,10 @@ header .container .logo{
     flex-direction: row;
 }
 
+header .container .logo img{
+    width:35px;
+}
+
 header .container h1 {
     margin: 0;
     color: white;
@@ -168,7 +180,7 @@ header .container .user img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('../../../img/assets/bgNight.gif');
+    background-image: url('../../../img/assets/bgNight2.gif');
     margin-bottom: 55px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -611,5 +623,3 @@ footer .copyMessage {
         font-size: 1.6em;
     }
 }
-
-

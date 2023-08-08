@@ -118,8 +118,8 @@ function entrar() {
     aguardar();
     var formulario = new URLSearchParams(new FormData(form_login));
     
-    sessionStorage.setItem('emailUsuario', json.emailUsuario);
-    sessionStorage.setItem('nomeUsuario', json.nomeUsuario);
+    sessionStorage.setItem('emailUsuario', 'usuario@email.com');
+    sessionStorage.setItem('nomeUsuario', 'Usuário');
     window.location.href='../Home/index.html';
     
     // fetch("/usuarios/autenticar", {

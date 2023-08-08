@@ -140,7 +140,7 @@ function entrar() {
     //         });
     //     }
     // });
-    return false;
+    return true;
 }
 
 function exibir_mensagem_falha(texto){

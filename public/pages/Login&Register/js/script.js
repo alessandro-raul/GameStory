@@ -117,24 +117,29 @@ function cadastrar() {
 function entrar() {
     aguardar();
     var formulario = new URLSearchParams(new FormData(form_login));
-    fetch("/usuarios/autenticar", {
-        method: "POST",
-        body: formulario
-    }).then(resposta => {
-        if (resposta.ok) {
-            resposta.json().then(json => {
-                sessionStorage.setItem('emailUsuario', json.emailUsuario);
-                sessionStorage.setItem('nomeUsuario', json.nomeUsuario);
-                window.location.href='../Home/index.html';
-            });
-        } else{
-            console.log('Erro de login!');
-            resposta.text().then(texto => {
-                finalizar_aguardar();
-                exibir_mensagem_falha(texto);
-            });
-        }
-    });
+    
+    sessionStorage.setItem('emailUsuario', json.emailUsuario);
+    sessionStorage.setItem('nomeUsuario', json.nomeUsuario);
+    window.location.href='../Home/index.html';
+    
+    // fetch("/usuarios/autenticar", {
+    //     method: "POST",
+    //     body: formulario
+    // }).then(resposta => {
+    //     if (resposta.ok) {
+    //         resposta.json().then(json => {
+    //             sessionStorage.setItem('emailUsuario', json.emailUsuario);
+    //             sessionStorage.setItem('nomeUsuario', json.nomeUsuario);
+    //             window.location.href='../Home/index.html';
+    //         });
+    //     } else{
+    //         console.log('Erro de login!');
+    //         resposta.text().then(texto => {
+    //             finalizar_aguardar();
+    //             exibir_mensagem_falha(texto);
+    //         });
+    //     }
+    // });
     return false;
 }
 

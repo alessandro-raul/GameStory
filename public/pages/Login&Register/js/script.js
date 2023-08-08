@@ -120,7 +120,7 @@ function entrar() {
     
     sessionStorage.setItem('emailUsuario', 'usuario@email.com');
     sessionStorage.setItem('nomeUsuario', 'Usuário');
-    window.location.href='../Home/index.html';
+    window.location.href='../Home/index.html', true;
     
     // fetch("/usuarios/autenticar", {
     //     method: "POST",
